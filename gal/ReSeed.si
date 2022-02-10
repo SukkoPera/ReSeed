@@ -1,0 +1,103 @@
+/* ReSeed GAL Equations
+* Copyright 2022 SukkoPera <software@sukkology.net>
+* Based on work by Solder/Synergy
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+/* These equations can be turned into a JED file through the WinCUPL software.
+* Too bad it's Windows-only and full of bugs...
+*/
+Name     ReSeed;
+PartNo   TBD;
+Date     10/02/2022;
+Revision 01;
+Designer SukkoPera + Solder/Synergy;
+Company  OpenRetroWorks;
+Assembly None;
+Location Italy;
+Device   g16v8;
+
+
+ORDER: addr, phi2, !sid, !port; 
+
+
+VECTORS:
+ '000' 0HH
+ 'AAA' 0HH
+ 'FD0' 0HH
+ 'FD1' 0HH
+ 'FD2' 0HH
+ 'FD3' 0HH
+ 'FD4' 0HH
+ 'FD5' 0HH
+ 'FD6' 0HH
+ 'FD7' 0HH
+ 'FD8' 0HH
+ 'FD9' 0HH
+ 'FDA' 0HH
+ 'FDB' 0HH
+ 'FDC' 0HH
+ 'FDD' 0HH
+ 'FDE' 0HH
+ 'FDF' 0HH
+ 'FE0' 0HH
+ 'FE1' 0HH
+ 'FE2' 0HH
+ 'FE3' 0HH
+ 'FE4' 0HH
+ 'FE5' 0HH
+ 'FE6' 0HH
+ 'FE7' 0HH
+ 'FE8' 0HH
+ 'FE9' 0HH
+ 'FEA' 0HH
+ 'FEB' 0HH
+ 'FEC' 0HH
+ 'FED' 0HH
+ 'FEE' 0HH
+ 'FEF' 0HH
+ '000' 1HH
+ 'AAA' 1HH
+ 'FD0' 1HH
+ 'FD1' 1HH
+ 'FD2' 1HH
+ 'FD3' 1HH
+ 'FD4' 1LH
+ 'FD5' 1LH
+ 'FD6' 1HH
+ 'FD7' 1HH
+ 'FD8' 1HL
+ 'FD9' 1HH
+ 'FDA' 1HH
+ 'FDB' 1HH
+ 'FDC' 1HH
+ 'FDD' 1HH
+ 'FDE' 1HH
+ 'FDF' 1HH
+ 'FE0' 1HH
+ 'FE1' 1HH
+ 'FE2' 1HH
+ 'FE3' 1HH
+ 'FE4' 1HH
+ 'FE5' 1HH
+ 'FE6' 1HH
+ 'FE7' 1HH
+ 'FE8' 1LH
+ 'FE9' 1LH
+ 'FEA' 1HH
+ 'FEB' 1HH
+ 'FEC' 1HH
+ 'FED' 1HH
+ 'FEE' 1HH
+ 'FEF' 1HH

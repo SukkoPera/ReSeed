@@ -1,0 +1,119 @@
+CSIM(WM): CUPL Simulation Program
+Version 5.0a Serial# 
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+CREATED Thu Feb 10 17:37:40 2022
+
+LISTING FOR SIMULATION FILE: RESEEDGAL.si
+
+   1: /* ReSeed GAL Equations
+   2: * Copyright 2022 SukkoPera <software@sukkology.net>
+   3: * Based on work by Solder/Synergy
+   4: *
+   5: * This program is free software: you can redistribute it and/or modify
+   6: * it under the terms of the GNU General Public License as published by
+   7: * the Free Software Foundation, either version 3 of the License, or
+   8: * (at your option) any later version.
+   9: *
+  10: * This program is distributed in the hope that it will be useful,
+  11: * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  12: * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  13: * GNU General Public License for more details.
+  14: *
+  15: * You should have received a copy of the GNU General Public License
+  16: * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  17: */
+  18: /* These equations can be turned into a JED file through the WinCUPL software.
+  19: * Too bad it's Windows-only and full of bugs...
+  20: */
+  21: Name     ReSeed;
+  22: PartNo   TBD;
+  23: Date     10/02/2022;
+  24: Revision 01;
+  25: Designer SukkoPera + Solder/Synergy;
+  26: Company  OpenRetroWorks;
+  27: Assembly None;
+  28: Location Italy;
+  29: Device   g16v8;
+  30: 
+  31: 
+  32: FIELD addr = [a15,a14,a13,a12,a11,a10,a9,a8,a7,a6,a5,a4];
+  33:
+  34: ORDER: addr, phi2, !sid, !port; 
+  35: 
+  36: 
+
+========================
+                    !   
+                  p!p   
+                  hso   
+                  iir   
+          addr    2dt   
+========================
+0001: 0000000000000HH
+0002: 1010101010100HH
+0003: 1111110100000HH
+0004: 1111110100010HH
+0005: 1111110100100HH
+0006: 1111110100110HH
+0007: 1111110101000HH
+0008: 1111110101010HH
+0009: 1111110101100HH
+0010: 1111110101110HH
+0011: 1111110110000HH
+0012: 1111110110010HH
+0013: 1111110110100HH
+0014: 1111110110110HH
+0015: 1111110111000HH
+0016: 1111110111010HH
+0017: 1111110111100HH
+0018: 1111110111110HH
+0019: 1111111000000HH
+0020: 1111111000010HH
+0021: 1111111000100HH
+0022: 1111111000110HH
+0023: 1111111001000HH
+0024: 1111111001010HH
+0025: 1111111001100HH
+0026: 1111111001110HH
+0027: 1111111010000HH
+0028: 1111111010010HH
+0029: 1111111010100HH
+0030: 1111111010110HH
+0031: 1111111011000HH
+0032: 1111111011010HH
+0033: 1111111011100HH
+0034: 1111111011110HH
+0035: 0000000000001HH
+0036: 1010101010101HH
+0037: 1111110100001HH
+0038: 1111110100011HH
+0039: 1111110100101HH
+0040: 1111110100111HH
+0041: 1111110101001LH
+0042: 1111110101011LH
+0043: 1111110101101HH
+0044: 1111110101111HH
+0045: 1111110110001HL
+0046: 1111110110011HH
+0047: 1111110110101HH
+0048: 1111110110111HH
+0049: 1111110111001HH
+0050: 1111110111011HH
+0051: 1111110111101HH
+0052: 1111110111111HH
+0053: 1111111000001HH
+0054: 1111111000011HH
+0055: 1111111000101HH
+0056: 1111111000111HH
+0057: 1111111001001HH
+0058: 1111111001011HH
+0059: 1111111001101HH
+0060: 1111111001111HH
+0061: 1111111010001LH
+0062: 1111111010011LH
+0063: 1111111010101HH
+0064: 1111111010111HH
+0065: 1111111011001HH
+0066: 1111111011011HH
+0067: 1111111011101HH
+0068: 1111111011111HH
