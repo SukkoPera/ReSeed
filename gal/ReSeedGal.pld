@@ -1,0 +1,71 @@
+/* ReSeed GAL Equations
+ * Copyright 2022 SukkoPera <software@sukkology.net>
+ * Based on work by Solder/Synergy
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+/* These equations can be turned into a JED file through the WinCUPL software.
+ * Too bad it's Windows-only and full of bugs...
+ */
+
+Name ReSeed;
+Partno TBD;
+Date 10/02/2022;
+Revision 01;
+Designer SukkoPera + Solder/Synergy;
+Company OpenRetroWorks;
+Assembly None;
+Location Italy;
+Device g16v8;
+
+/** Inputs **/
+Pin 1 = a15;
+Pin 2 = a13;
+Pin 3 = a11;
+Pin 4 = a10;
+Pin 5 = a9;
+Pin 6 = a8;
+Pin 7 = a7;
+Pin 8 = a6;
+Pin 9 = a5;
+Pin 11 = a4;
+Pin 17 = phi2;
+Pin 18 = a12;
+Pin 19 = a14;
+
+/** Outputs **/
+/* Pin 12 = UNUSED (no feedback path) */
+/* Pin 13 = UNUSED */
+Pin 14 = !port;	// Joystick Port Enable (Active-low)
+Pin 15 = !sid;		// SID Enable (Active-low)
+/* Pin 16 = UNUSED */
+
+/** Declarations and Intermediate Variable Definitions **/
+Field addr = [a15..4];
+
+/** Logic Equations **/
+
+/* SID Chip Select */
+TABLE addr => sid_range {
+	'b'11111101010xxxxx => 'b'1;	// $FD40-FD5F (Germany)
+	'b'11111110100xxxxx => 'b'1;	// $FE80-FE9F (Hungary)
+}
+sid = sid_range & phi2;
+
+/* Joystick port Chip Select (Always FD80-FD8F) */
+TABLE addr => port_addr {
+	'b'111111011000xxxx => 'b'1;
+}
+port = port_addr & phi2;
