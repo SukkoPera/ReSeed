@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Wed 09 Feb 2022 22:25:55 CET")
+    (date "Thu 10 Feb 2022 23:08:58 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -226,7 +226,7 @@
       (tstamp 630231DC))
     (comp (ref Q1)
       (value BC549C)
-      (footprint Package_TO_SOT_THT:TO-92_Inline)
+      (footprint Package_TO_SOT_THT:TO-92_HandSolder)
       (datasheet https://www.onsemi.com/pub/Collateral/BC550-D.pdf)
       (libsource (lib Transistor_BJT) (part BC549) (description "0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"))
       (sheetpath (names /) (tstamps /))
@@ -261,7 +261,7 @@
       (tstamp 6310F5D4))
     (comp (ref Q2)
       (value BC549C)
-      (footprint Package_TO_SOT_THT:TO-92_Inline)
+      (footprint Package_TO_SOT_THT:TO-92_HandSolder)
       (datasheet https://www.onsemi.com/pub/Collateral/BC550-D.pdf)
       (libsource (lib Transistor_BJT) (part BC549) (description "0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"))
       (sheetpath (names /) (tstamps /))
