@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Thu 10 Feb 2022 23:08:58 CET")
+    (date "Fri 11 Feb 2022 22:17:00 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -247,7 +247,7 @@
       (tstamp 630725DE))
     (comp (ref C4)
       (value 10u)
-      (footprint Capacitor_THT:CP_Radial_D6.3mm_P2.50mm)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names /) (tstamps /))
