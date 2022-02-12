@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "ReSeed"
-Date "2022-02-09"
+Date "2022-02-12"
 Rev "1git"
 Comp "SukkoPera"
 Comment1 "Replica of Christian Schäffner (Solder)'s SID Card for the Commodore 16/+4"
@@ -89,28 +89,6 @@ F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 13840 6490 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 13840 6490 50  0001 C CNN
 	1    13840 6490
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:AudioJack3 CN2
-U 1 1 62084245
-P 14965 1745
-F 0 "CN2" H 14685 1678 50  0000 R CNN
-F 1 "AUDIO_OUT" H 14685 1769 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 14965 1745 50  0001 C CNN
-F 3 "~" H 14965 1745 50  0001 C CNN
-	1    14965 1745
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:AudioJack3 CN3
-U 1 1 6208459B
-P 14965 3115
-F 0 "CN3" H 14685 3048 50  0000 R CNN
-F 1 "AUDIO_IN" H 14685 3139 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 14965 3115 50  0001 C CNN
-F 3 "~" H 14965 3115 50  0001 C CNN
-	1    14965 3115
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1880 4725 1740 4725
@@ -310,7 +288,7 @@ U 1 1 620A22EF
 P 6920 9170
 F 0 "L1" H 6972 9216 50  0000 L CNN
 F 1 "680u" H 6972 9125 50  0000 L CNN
-F 2 "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC" H 6920 9170 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP" H 6920 9170 50  0001 C CNN
 F 3 "~" H 6920 9170 50  0001 C CNN
 	1    6920 9170
 	1    0    0    -1  
@@ -1473,17 +1451,6 @@ Wire Bus Line
 Text Label 6960 2120 0    50   ~ 0
 ~sid
 $Comp
-L Connector:Conn_01x03_Male SW1
-U 1 1 62FFCD54
-P 14415 2145
-F 0 "SW1" V 14395 2370 50  0000 R CNN
-F 1 "SW_INT_EXT" V 14305 2550 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 14415 2145 50  0001 C CNN
-F 3 "~" H 14415 2145 50  0001 C CNN
-	1    14415 2145
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R1
 U 1 1 63010374
 P 10235 1320
@@ -1729,10 +1696,6 @@ F 3 "~" H 14045 1645 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13515 1645 13895 1645
-Wire Wire Line
-	14765 1845 14650 1845
-Wire Wire Line
-	14650 1845 14650 2230
 $Comp
 L power:GND #PWR010
 U 1 1 63261338
@@ -1744,31 +1707,8 @@ F 3 "" H 14650 2230 50  0001 C CNN
 	1    14650 2230
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14765 1645 14515 1645
 Text Label 1275 4625 0    50   ~ 0
 phi2
-Text Label 13880 1845 0    50   ~ 0
-ext_audio
-Wire Wire Line
-	14315 1945 14315 1845
-Wire Wire Line
-	14315 1845 13880 1845
-Wire Wire Line
-	14515 1945 14515 1745
-Connection ~ 14515 1745
-Wire Wire Line
-	14515 1745 14765 1745
-Wire Wire Line
-	14515 1745 14515 1645
-Wire Wire Line
-	14415 1645 14415 1945
-Wire Wire Line
-	14195 1645 14415 1645
-Wire Wire Line
-	14765 3215 14650 3215
-Wire Wire Line
-	14650 3215 14650 3600
 $Comp
 L power:GND #PWR018
 U 1 1 633C29EE
@@ -1855,10 +1795,68 @@ F 3 "~" H 11655 3295 50  0001 C CNN
 	1    11655 3295
 	-1   0    0    1   
 $EndComp
+Text Notes 2485 7635 0    50   ~ 0
+SPARE
+Wire Wire Line
+	14765 1945 14650 1945
+Wire Wire Line
+	14650 1945 14650 2230
+Wire Wire Line
+	14765 1845 14650 1845
+Wire Wire Line
+	14650 1845 14650 1645
+Wire Wire Line
+	14195 1645 14650 1645
+Wire Wire Line
+	14650 1645 14765 1645
+Connection ~ 14650 1645
+Wire Wire Line
+	14765 1545 14330 1545
+Text Label 14330 1545 0    50   ~ 0
+ext_audio
+$Comp
+L Connector:AudioJack3_SwitchTR CN2
+U 1 1 637FDCD2
+P 14965 1845
+F 0 "CN2" H 14685 1678 50  0000 R CNN
+F 1 "AUDIO_OUT" H 14685 1769 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 14965 1845 50  0001 C CNN
+F 3 "~" H 14965 1845 50  0001 C CNN
+	1    14965 1845
+	-1   0    0    1   
+$EndComp
+NoConn ~ 14765 1745
+$Comp
+L Connector:AudioJack3_SwitchTR CN3
+U 1 1 6393D5DC
+P 14965 3215
+F 0 "CN3" H 14685 3048 50  0000 R CNN
+F 1 "AUDIO_IN" H 14685 3139 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 14965 3215 50  0001 C CNN
+F 3 "~" H 14965 3215 50  0001 C CNN
+	1    14965 3215
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14765 3315 14650 3315
+Wire Wire Line
+	14650 3315 14650 3600
+Wire Wire Line
+	13515 3015 14520 3015
+Wire Wire Line
+	14650 3315 14650 3115
+Wire Wire Line
+	14650 2915 14765 2915
+Connection ~ 14650 3315
 Wire Wire Line
 	14765 3115 14650 3115
+Connection ~ 14650 3115
 Wire Wire Line
-	14650 3115 14650 3015
+	14650 3115 14650 2915
+Wire Wire Line
+	14765 3215 14520 3215
+Wire Wire Line
+	14520 3215 14520 3015
 Wire Bus Line
 	9365 5800 9365 6055
 Wire Bus Line
@@ -1873,11 +1871,7 @@ Wire Bus Line
 	7165 5800 7165 6855
 Wire Bus Line
 	3870 2725 3870 4225
+Connection ~ 14520 3015
 Wire Wire Line
-	14765 3015 14650 3015
-Wire Wire Line
-	14650 3015 13515 3015
-Connection ~ 14650 3015
-Text Notes 2485 7635 0    50   ~ 0
-SPARE
+	14520 3015 14765 3015
 $EndSCHEMATC
