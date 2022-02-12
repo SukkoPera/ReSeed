@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Sat 12 Feb 2022 14:09:17 CET")
+    (date "Sat 12 Feb 2022 18:40:06 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -23,9 +23,11 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 6207B5C4))
     (comp (ref U2)
-      (value 4520)
+      (value CD4520BE)
       (footprint Package_DIP:DIP-16_W7.62mm_Socket_LongPads)
       (datasheet http://www.intersil.com/content/dam/Intersil/documents/cd45/cd4518bms-20bms.pdf)
+      (fields
+        (field (name MouserPN) 595-CD74HCT4520E))
       (libsource (lib 4xxx) (part 4520) (description "Dual Binary Up-Counter"))
       (sheetpath (names /) (tstamps /))
       (tstamp 6207DEAD))
