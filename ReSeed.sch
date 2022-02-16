@@ -10,7 +10,7 @@ Rev "1git"
 Comp "SukkoPera"
 Comment1 "Replica of Christian Schäffner (Solder)'s SID Card for the Commodore 16/+4"
 Comment2 "http://solder-synergy.de/plus4/hardware/index.html"
-Comment3 ""
+Comment3 "Licensed under CC BY-NC-SA 4.0"
 Comment4 ""
 $EndDescr
 $Comp
@@ -1977,6 +1977,28 @@ Wire Notes Line
 	6680 1950 5895 1950
 Wire Notes Line
 	5895 1950 5895 1175
+$Comp
+L void:Void V0
+U 1 1 64138BAD
+P 15465 9505
+F 0 "V0" H 15543 9551 50  0000 L CNN
+F 1 "LOGO" H 15543 9460 50  0000 L CNN
+F 2 "ReSeed:Logo" H 15465 9505 50  0001 C CNN
+F 3 "" H 15465 9505 50  0001 C CNN
+	1    15465 9505
+	1    0    0    -1  
+$EndComp
+$Comp
+L void:Void V1
+U 1 1 64138E7F
+P 15465 9740
+F 0 "V1" H 15543 9786 50  0000 L CNN
+F 1 "LICENSE" H 15543 9695 50  0000 L CNN
+F 2 "ReSeed:cc_by_nc_sa" H 15465 9740 50  0001 C CNN
+F 3 "" H 15465 9740 50  0001 C CNN
+	1    15465 9740
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	9365 5800 9365 6055
 Wire Bus Line

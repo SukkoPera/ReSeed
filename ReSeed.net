@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Mon 14 Feb 2022 23:25:03 CET")
+    (date "Wed 16 Feb 2022 19:22:40 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -63,6 +63,8 @@
       (value "1 1%/0.5W")
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MF0207FRE52-1R))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 62099265))
@@ -362,7 +364,19 @@
         (field (name MouserPN) 710-860020573008))
       (libsource (lib Device) (part CP1) (description "Polarized capacitor, US symbol"))
       (sheetpath (names /) (tstamps /))
-      (tstamp 63F75867)))
+      (tstamp 63F75867))
+    (comp (ref V0)
+      (value LOGO)
+      (footprint ReSeed:Logo)
+      (libsource (lib void) (part Void) (description ""))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 64138BAD))
+    (comp (ref V1)
+      (value LICENSE)
+      (footprint ReSeed:cc_by_nc_sa)
+      (libsource (lib void) (part Void) (description ""))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 64138E7F)))
   (libparts
     (libpart (lib 4xxx) (part 4520)
       (description "Dual Binary Up-Counter")
@@ -701,7 +715,11 @@
       (pins
         (pin (num 1) (name C) (type passive))
         (pin (num 2) (name B) (type input))
-        (pin (num 3) (name E) (type passive)))))
+        (pin (num 3) (name E) (type passive))))
+    (libpart (lib void) (part Void)
+      (fields
+        (field (name Reference) V)
+        (field (name Value) Void))))
   (libraries
     (library (logical 4xxx)
       (uri /usr/share/kicad/library/4xxx.lib))
@@ -720,7 +738,9 @@
     (library (logical Regulator_Switching)
       (uri /usr/share/kicad/library/Regulator_Switching.lib))
     (library (logical Transistor_BJT)
-      (uri /usr/share/kicad/library/Transistor_BJT.lib)))
+      (uri /usr/share/kicad/library/Transistor_BJT.lib))
+    (library (logical void)
+      (uri /home/sukko/Documents/kicad/ReSeed/lib/void.lib)))
   (nets
     (net (code 1) (name /d5)
       (node (ref U1) (pin 20))

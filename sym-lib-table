@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name MOS_8580)(type Legacy)(uri ${KIPRJMOD}/lib/MOS_8580.lib)(options "")(descr ""))
   (lib (name C16-Exp-Port)(type Legacy)(uri ${KIPRJMOD}/lib/C16-Exp-Port.lib)(options "")(descr ""))
+  (lib (name void)(type Legacy)(uri ${KIPRJMOD}/lib/void.lib)(options "")(descr ""))
 )
