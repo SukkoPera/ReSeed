@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Sun 20 Mar 2022 17:16:47 CET")
+    (date "Sun 20 Mar 2022 18:00:03 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -272,7 +272,7 @@
       (tstamp 630725DE))
     (comp (ref RV1)
       (value 10k)
-      (footprint ReSeed:Potentiometer_Vertical)
+      (footprint ReSeed:Pot_Bourns_3306P)
       (datasheet ~)
       (libsource (lib Device) (part R_POT) (description Potentiometer))
       (sheetpath (names /) (tstamps /))
@@ -353,7 +353,7 @@
       (tstamp 642BE109))
     (comp (ref RV2)
       (value 1M)
-      (footprint ReSeed:Potentiometer_Vertical)
+      (footprint ReSeed:Pot_Bourns_3306P)
       (datasheet ~)
       (libsource (lib Device) (part R_POT) (description Potentiometer))
       (sheetpath (names /) (tstamps /))
