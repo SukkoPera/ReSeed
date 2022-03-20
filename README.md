@@ -6,3 +6,6 @@ https://plus4world.powweb.com/hardware/Solders_SID_Card
 http://solder-synergy.de/plus4/hardware/makers/index.html
 
 https://grabcad.com/library/ebs35-3-5mm-stereo-connector-1
+
+
+https://github.com/thireo/kicad-library
