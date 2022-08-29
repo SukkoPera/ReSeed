@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "ReSeed"
-Date "2022-08-25"
+Date "2022-08-30"
 Rev "2git"
 Comp "SukkoPera/Kinmami"
 Comment1 "Replica of Christian Schäffner (Solder)'s SID Card for the Commodore 16/+4"
@@ -86,23 +86,6 @@ F 4 " 595-TL497ACNE4 " H 8220 9515 50  0001 C CNN "MouserPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS245 U3
-U 1 1 62081D66
-P 13840 6490
-F 0 "U3" H 13600 7140 50  0000 C CNN
-F 1 "74LS245" H 14040 5830 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 13840 6490 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 13840 6490 50  0001 C CNN
-F 4 " 595-SN74HCT245N" H 13840 6490 50  0001 C CNN "MouserPN"
-	1    13840 6490
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2390 3700 2250 3700
-Connection ~ 2250 3700
-Wire Wire Line
-	2250 3700 2250 3895
-$Comp
 L power:GND #PWR021
 U 1 1 62087AD2
 P 2250 3895
@@ -113,10 +96,6 @@ F 3 "" H 2250 3895 50  0001 C CNN
 	1    2250 3895
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2390 1500 2140 1500
-Wire Wire Line
-	2140 1500 2140 1400
 $Comp
 L power:+5V #PWR08
 U 1 1 620889FC
@@ -128,34 +107,6 @@ F 3 "" H 2140 1155 50  0001 C CNN
 	1    2140 1155
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7765 6055 7265 6055
-Wire Wire Line
-	7765 6155 7265 6155
-Wire Wire Line
-	7765 6255 7265 6255
-Wire Wire Line
-	7765 6355 7265 6355
-Wire Wire Line
-	7765 6455 7265 6455
-Wire Wire Line
-	7765 6555 7265 6555
-Wire Wire Line
-	7765 6655 7265 6655
-Wire Wire Line
-	7765 6755 7265 6755
-Wire Wire Line
-	7765 6855 7265 6855
-Wire Wire Line
-	9265 6055 8765 6055
-Wire Wire Line
-	9265 6155 8765 6155
-Wire Wire Line
-	9265 6455 8765 6455
-Wire Wire Line
-	9265 6555 8765 6555
-Wire Wire Line
-	8265 7255 8265 7330
 $Comp
 L power:GND #PWR029
 U 1 1 620921F6
@@ -167,8 +118,6 @@ F 3 "" H 8265 7330 50  0001 C CNN
 	1    8265 7330
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8265 5855 8265 5745
 $Comp
 L power:+5V #PWR025
 U 1 1 62093238
@@ -180,8 +129,6 @@ F 3 "" H 8265 5745 50  0001 C CNN
 	1    8265 5745
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8320 10015 8320 10405
 $Comp
 L power:GND #PWR038
 U 1 1 62093D77
@@ -193,30 +140,6 @@ F 3 "" H 8320 10455 50  0001 C CNN
 	1    8320 10455
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7720 9615 7585 9615
-Wire Wire Line
-	7585 9615 7585 9815
-Wire Wire Line
-	7585 10405 8320 10405
-Connection ~ 8320 10405
-Wire Wire Line
-	8320 10405 8320 10455
-Wire Wire Line
-	7720 9815 7585 9815
-Connection ~ 7585 9815
-Wire Wire Line
-	7585 9815 7585 10405
-Wire Wire Line
-	8720 9415 8860 9415
-Wire Wire Line
-	8860 9415 8860 10405
-Wire Wire Line
-	8860 10405 8320 10405
-Wire Wire Line
-	7720 9215 7550 9215
-Wire Wire Line
-	7550 9215 7550 8915
 $Comp
 L power:+5V #PWR034
 U 1 1 620975BE
@@ -228,10 +151,6 @@ F 3 "" H 7550 8530 50  0001 C CNN
 	1    7550 8530
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7720 9415 6930 9415
-Wire Wire Line
-	6930 9415 6930 9315
 $Comp
 L Device:R R8
 U 1 1 62099265
@@ -244,17 +163,6 @@ F 4 "603-MF0207FRE52-1R" H 6930 9165 50  0001 C CNN "MouserPN"
 	1    6930 9165
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6930 9015 6930 8915
-Wire Wire Line
-	6930 8915 7550 8915
-Connection ~ 7550 8915
-Wire Wire Line
-	7550 8915 7550 8530
-Wire Wire Line
-	8720 9815 9015 9815
-Wire Wire Line
-	9015 9815 9015 8530
 $Comp
 L power:+9V #PWR035
 U 1 1 6209CFA9
@@ -278,15 +186,6 @@ F 4 "810-FG28C0G1H470JNT0" H 7265 9815 50  0001 C CNN "MouserPN"
 	1    7265 9815
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7265 9665 7265 9515
-Wire Wire Line
-	7265 9515 7720 9515
-Wire Wire Line
-	7265 9965 7265 10405
-Wire Wire Line
-	7265 10405 7585 10405
-Connection ~ 7585 10405
 $Comp
 L Device:L L1
 U 1 1 620A22EF
@@ -299,24 +198,6 @@ F 4 " 652-RLB0914-331KL" H 6585 9170 50  0001 C CNN "MouserPN"
 	1    6585 9170
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6585 9320 6585 9415
-Wire Wire Line
-	6585 9415 6930 9415
-Connection ~ 6930 9415
-Wire Wire Line
-	6585 9020 6585 8765
-Wire Wire Line
-	6585 8765 8860 8765
-Wire Wire Line
-	8860 8765 8860 9215
-Wire Wire Line
-	8860 9215 8720 9215
-Wire Wire Line
-	8720 9315 8860 9315
-Wire Wire Line
-	8860 9315 8860 9215
-Connection ~ 8860 9215
 $Comp
 L Device:R R9
 U 1 1 620A6D4F
@@ -341,19 +222,6 @@ F 4 "603-MF0207FTE52-1K2" H 10270 10065 50  0001 C CNN "MouserPN"
 	1    10270 10065
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	10170 9815 10270 9815
-Wire Wire Line
-	10270 9815 10270 9915
-Wire Wire Line
-	10270 9815 10270 8915
-Wire Wire Line
-	10270 8915 7635 8915
-Wire Wire Line
-	7635 8915 7635 9315
-Wire Wire Line
-	7635 9315 7720 9315
-Connection ~ 10270 9815
 $Comp
 L Device:CP1 C16
 U 1 1 620B0D59
@@ -366,29 +234,10 @@ F 4 "710-860020475018" H 9015 10145 50  0001 C CNN "MouserPN"
 	1    9015 10145
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9015 9995 9015 9815
-Connection ~ 9015 9815
-Wire Wire Line
-	9015 9815 9715 9815
-Wire Wire Line
-	9015 10295 9015 10405
-Wire Wire Line
-	9015 10405 9715 10405
-Wire Wire Line
-	10270 10405 10270 10215
-Wire Wire Line
-	8860 10405 9015 10405
-Connection ~ 8860 10405
-Connection ~ 9015 10405
 NoConn ~ 8720 9515
 NoConn ~ 8720 9615
 Text Notes 7890 8625 0    50   ~ 0
 STEP-UP VOLTAGE\nREGULATOR
-Wire Wire Line
-	8845 1420 8950 1420
-Wire Wire Line
-	8950 1420 8950 1185
 $Comp
 L power:+9V #PWR03
 U 1 1 620C7D9C
@@ -400,10 +249,6 @@ F 3 "" H 8950 1185 50  0001 C CNN
 	1    8950 1185
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7345 2720 7225 2720
-Wire Wire Line
-	7225 2720 7225 2855
 $Comp
 L power:GND #PWR012
 U 1 1 620CA31C
@@ -438,10 +283,6 @@ F 4 "810-FG28X7R1H104KNT0" H 7800 3625 50  0001 C CNN "MouserPN"
 	1    7800 3625
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 3775 7800 3870
-Wire Wire Line
-	7800 3475 7800 3375
 $Comp
 L power:+9V #PWR014
 U 1 1 620CF893
@@ -477,30 +318,6 @@ F 4 "810-FG28X7R1H223KNT0" H 6510 1825 50  0001 C CNN "MouserPN"
 	1    6510 1825
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7345 1420 7150 1420
-Wire Wire Line
-	7150 1020 6510 1020
-Wire Wire Line
-	6510 1020 6510 1155
-Wire Wire Line
-	6510 1455 6510 1520
-Wire Wire Line
-	7345 1620 6510 1620
-Wire Wire Line
-	6510 1620 6510 1675
-Wire Wire Line
-	7345 1720 6670 1720
-Wire Wire Line
-	6670 1720 6670 2015
-Wire Wire Line
-	6670 2015 6510 2015
-Wire Wire Line
-	6510 2015 6510 1975
-Wire Wire Line
-	8845 1720 9120 1720
-Wire Wire Line
-	9120 1720 9120 1185
 $Comp
 L power:+5V #PWR04
 U 1 1 620E7E5E
@@ -535,10 +352,6 @@ F 4 "810-FG28X7R1H104KNT0" H 8345 3625 50  0001 C CNN "MouserPN"
 	1    8345 3625
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8345 3775 8345 3870
-Wire Wire Line
-	8345 3475 8345 3375
 $Comp
 L power:+5V #PWR015
 U 1 1 620EFA76
@@ -550,24 +363,6 @@ F 3 "" H 8345 3375 50  0001 C CNN
 	1    8345 3375
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8845 1920 9230 1920
-Wire Wire Line
-	8845 2020 9505 2020
-Wire Wire Line
-	8845 2120 9505 2120
-Wire Wire Line
-	8845 2220 9505 2220
-Wire Wire Line
-	8845 2320 9505 2320
-Wire Wire Line
-	8845 2420 9505 2420
-Wire Wire Line
-	8845 2520 9505 2520
-Wire Wire Line
-	8845 2620 9505 2620
-Wire Wire Line
-	8845 2720 9505 2720
 Entry Wire Line
 	9505 2720 9605 2620
 Entry Wire Line
@@ -600,209 +395,109 @@ Text Label 9505 2620 2    50   ~ 0
 d1
 Text Label 9505 2720 2    50   ~ 0
 d0
-Wire Wire Line
-	14340 6690 14745 6690
-Wire Wire Line
-	14340 6590 14745 6590
-Wire Wire Line
-	14340 6490 14745 6490
-Wire Wire Line
-	14340 6390 14745 6390
-Wire Wire Line
-	14340 6290 14745 6290
-Wire Wire Line
-	14340 6190 14745 6190
-Wire Wire Line
-	14340 6090 14745 6090
-Wire Wire Line
-	14340 5990 14745 5990
 Entry Wire Line
-	14745 6690 14845 6590
+	15390 6380 15490 6280
 Entry Wire Line
-	14745 6590 14845 6490
+	15390 6280 15490 6180
 Entry Wire Line
-	14745 6490 14845 6390
+	15390 6180 15490 6080
 Entry Wire Line
-	14745 6390 14845 6290
+	15390 6080 15490 5980
 Entry Wire Line
-	14745 6290 14845 6190
-Entry Wire Line
-	14745 6190 14845 6090
-Entry Wire Line
-	14745 6090 14845 5990
-Entry Wire Line
-	14745 5990 14845 5890
-Wire Bus Line
-	14845 5890 15160 5890
-Text Label 15160 5890 2    50   ~ 0
+	15390 5980 15490 5880
+Text Label 15805 5880 2    50   ~ 0
 d[0..7]
-Text Label 14745 6690 2    50   ~ 0
-d7
-Text Label 14745 6590 2    50   ~ 0
-d6
-Text Label 14745 6490 2    50   ~ 0
-d5
-Text Label 14745 6390 2    50   ~ 0
+Text Label 15390 6380 2    50   ~ 0
 d4
-Text Label 14745 6290 2    50   ~ 0
+Text Label 15390 6280 2    50   ~ 0
 d3
-Text Label 14745 6190 2    50   ~ 0
+Text Label 15390 6180 2    50   ~ 0
 d2
-Text Label 14745 6090 2    50   ~ 0
+Text Label 15390 6080 2    50   ~ 0
 d1
-Text Label 14745 5990 2    50   ~ 0
+Text Label 15390 5980 2    50   ~ 0
 d0
-$Comp
-L Device:R_Network08 RN1
-U 1 1 62173765
-P 12810 5620
-F 0 "RN1" H 12810 5890 50  0000 R CNN
-F 1 "3.3k" H 12820 5805 50  0000 R CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 13285 5620 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12810 5620 50  0001 C CNN
-F 4 "652-4609X-1LF-4.7K" H 12810 5620 50  0001 C CNN "MouserPN"
-	1    12810 5620
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13840 7290 13840 7370
 $Comp
 L power:GND #PWR030
 U 1 1 621809E1
-P 13840 7370
-F 0 "#PWR030" H 13840 7120 50  0001 C CNN
-F 1 "GND" H 13845 7197 50  0000 C CNN
-F 2 "" H 13840 7370 50  0001 C CNN
-F 3 "" H 13840 7370 50  0001 C CNN
-	1    13840 7370
+P 14485 7360
+F 0 "#PWR030" H 14485 7110 50  0001 C CNN
+F 1 "GND" H 14490 7187 50  0000 C CNN
+F 2 "" H 14485 7360 50  0001 C CNN
+F 3 "" H 14485 7360 50  0001 C CNN
+	1    14485 7360
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	13840 5690 13840 5605
 $Comp
 L power:+5V #PWR024
 U 1 1 6218595D
-P 13840 5605
-F 0 "#PWR024" H 13840 5455 50  0001 C CNN
-F 1 "+5V" H 13855 5778 50  0000 C CNN
-F 2 "" H 13840 5605 50  0001 C CNN
-F 3 "" H 13840 5605 50  0001 C CNN
-	1    13840 5605
+P 14485 5595
+F 0 "#PWR024" H 14485 5445 50  0001 C CNN
+F 1 "+5V" H 14500 5768 50  0000 C CNN
+F 2 "" H 14485 5595 50  0001 C CNN
+F 3 "" H 14485 5595 50  0001 C CNN
+	1    14485 5595
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR023
 U 1 1 621AA5CC
-P 12350 5245
-F 0 "#PWR023" H 12350 5095 50  0001 C CNN
-F 1 "+5V" H 12365 5418 50  0000 C CNN
-F 2 "" H 12350 5245 50  0001 C CNN
-F 3 "" H 12350 5245 50  0001 C CNN
-	1    12350 5245
+P 12995 5235
+F 0 "#PWR023" H 12995 5085 50  0001 C CNN
+F 1 "+5V" H 13010 5408 50  0000 C CNN
+F 2 "" H 12995 5235 50  0001 C CNN
+F 3 "" H 12995 5235 50  0001 C CNN
+	1    12995 5235
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	13340 6890 13015 6890
-Text Label 13015 6890 0    50   ~ 0
+Text Label 13450 6880 0    50   ~ 0
 r_~w
-Wire Wire Line
-	13340 6990 13015 6990
-Text Label 13015 6990 0    50   ~ 0
+Text Label 13450 6980 0    50   ~ 0
 ~port
 $Comp
 L power:GND #PWR032
 U 1 1 621B5ED3
-P 14690 7550
-F 0 "#PWR032" H 14690 7300 50  0001 C CNN
-F 1 "GND" H 14695 7377 50  0000 C CNN
-F 2 "" H 14690 7550 50  0001 C CNN
-F 3 "" H 14690 7550 50  0001 C CNN
-	1    14690 7550
+P 15700 7255
+F 0 "#PWR032" H 15700 7005 50  0001 C CNN
+F 1 "GND" H 15705 7082 50  0000 C CNN
+F 2 "" H 15700 7255 50  0001 C CNN
+F 3 "" H 15700 7255 50  0001 C CNN
+	1    15700 7255
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C13
 U 1 1 621B6317
-P 14690 7305
-F 0 "C13" H 14805 7351 50  0000 L CNN
-F 1 "100n" H 14805 7260 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 14728 7155 50  0001 C CNN
-F 3 "~" H 14690 7305 50  0001 C CNN
-F 4 "810-FG28X7R1H104KNT0" H 14690 7305 50  0001 C CNN "MouserPN"
-	1    14690 7305
+P 15700 7010
+F 0 "C13" H 15815 7056 50  0000 L CNN
+F 1 "100n" H 15815 6965 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 15738 6860 50  0001 C CNN
+F 3 "~" H 15700 7010 50  0001 C CNN
+F 4 "810-FG28X7R1H104KNT0" H 15700 7010 50  0001 C CNN "MouserPN"
+	1    15700 7010
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	14690 7455 14690 7550
-Wire Wire Line
-	14690 7155 14690 7055
 $Comp
 L power:+5V #PWR027
 U 1 1 621B6323
-P 14690 7055
-F 0 "#PWR027" H 14690 6905 50  0001 C CNN
-F 1 "+5V" H 14705 7228 50  0000 C CNN
-F 2 "" H 14690 7055 50  0001 C CNN
-F 3 "" H 14690 7055 50  0001 C CNN
-	1    14690 7055
+P 15700 6760
+F 0 "#PWR027" H 15700 6610 50  0001 C CNN
+F 1 "+5V" H 15715 6933 50  0000 C CNN
+F 2 "" H 15700 6760 50  0001 C CNN
+F 3 "" H 15700 6760 50  0001 C CNN
+	1    15700 6760
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	11925 6295 12060 6295
-Wire Wire Line
-	12060 6295 12060 7145
-Wire Wire Line
-	12060 7145 11835 7145
-Wire Wire Line
-	11625 7145 11625 6995
-Wire Wire Line
-	11925 6495 12290 6490
-Wire Wire Line
-	12410 5990 12410 6790
-Wire Wire Line
-	12410 6790 11925 6795
-Wire Wire Line
-	13340 5990 12410 5990
-Wire Wire Line
-	12510 6090 12510 6590
-Wire Wire Line
-	12510 6590 11925 6595
-Wire Wire Line
-	13340 6090 12510 6090
-Wire Wire Line
-	12610 6190 12610 6390
-Wire Wire Line
-	12610 6390 11925 6395
-Wire Wire Line
-	13340 6190 12610 6190
-Wire Wire Line
-	12175 6195 12175 6290
-Wire Wire Line
-	12175 6195 11925 6195
-Wire Wire Line
-	11925 5995 12175 5995
-Wire Wire Line
-	11925 6095 12175 6095
-Text Label 12175 5995 2    50   ~ 0
+Text Label 12135 5980 2    50   ~ 0
 poty
-Text Label 12175 6095 2    50   ~ 0
+Text Label 12135 6080 2    50   ~ 0
 potx
-Wire Wire Line
-	8845 1820 8950 1820
-Wire Bus Line
-	9605 1920 10120 1920
 Text Label 10120 1920 2    50   ~ 0
 d[0..7]
 Text Label 10085 1620 2    50   ~ 0
 potx
-Wire Wire Line
-	9865 1720 10085 1720
-Wire Wire Line
-	9865 1620 10085 1620
 Text Label 10085 1720 2    50   ~ 0
 poty
-Wire Wire Line
-	9505 1720 9565 1720
 $Comp
 L Device:R R2
 U 1 1 6224D360
@@ -814,12 +509,6 @@ F 3 "~" H 9715 1720 50  0001 C CNN
 	1    9715 1720
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9425 1620 9565 1620
-Wire Wire Line
-	9425 1820 9425 1620
-Wire Wire Line
-	9505 1920 9505 1720
 $Comp
 L Device:R R1
 U 1 1 6224C319
@@ -831,16 +520,6 @@ F 3 "~" H 9715 1620 50  0001 C CNN
 	1    9715 1620
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8845 1620 9345 1620
-Wire Wire Line
-	9345 1620 9345 1420
-Wire Wire Line
-	8845 1520 9230 1520
-Wire Wire Line
-	9230 1520 9230 1320
-Wire Wire Line
-	9230 1320 10705 1320
 $Comp
 L Device:C C3
 U 1 1 622A92D6
@@ -865,14 +544,6 @@ F 4 "810-FG28C0G1H392JNT6" H 9230 2985 50  0001 C CNN "MouserPN"
 	1    9230 2985
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8950 3135 8950 3255
-Wire Wire Line
-	8950 3255 9095 3255
-Wire Wire Line
-	9230 3255 9230 3135
-Wire Wire Line
-	9095 3255 9095 3350
 $Comp
 L power:GND #PWR013
 U 1 1 622B5494
@@ -884,95 +555,29 @@ F 3 "" H 9095 3350 50  0001 C CNN
 	1    9095 3350
 	1    0    0    -1  
 $EndComp
-Connection ~ 9095 3255
-Wire Wire Line
-	9095 3255 9230 3255
-Wire Wire Line
-	8950 2835 8950 1820
-Connection ~ 8950 1820
-Wire Wire Line
-	8950 1820 9425 1820
-Wire Wire Line
-	9230 2835 9230 1920
-Connection ~ 9230 1920
-Wire Wire Line
-	9230 1920 9505 1920
-Wire Wire Line
-	12290 5315 12350 5315
-Wire Wire Line
-	12410 5315 12410 5420
-Wire Wire Line
-	12290 5315 12290 6490
-Wire Wire Line
-	12350 5315 12350 5245
-Connection ~ 12350 5315
-Wire Wire Line
-	12350 5315 12410 5315
-Wire Wire Line
-	12410 5820 12410 5990
-Connection ~ 12410 5990
-Wire Wire Line
-	12510 6090 12510 5820
-Connection ~ 12510 6090
-Wire Wire Line
-	12610 5820 12610 6190
-Connection ~ 12610 6190
-Wire Wire Line
-	12810 6690 11925 6695
-Wire Wire Line
-	12810 6390 12810 6690
-Wire Wire Line
-	13340 6390 12810 6390
-Wire Wire Line
-	12810 5820 12810 6390
-Connection ~ 12810 6390
-Wire Wire Line
-	12910 6490 12910 5820
-Wire Wire Line
-	13340 6490 12910 6490
-Wire Wire Line
-	13010 5820 13010 6590
-Wire Wire Line
-	13340 6590 13010 6590
-Wire Wire Line
-	13110 6690 13110 5820
-Wire Wire Line
-	13340 6690 13110 6690
-Wire Wire Line
-	13340 6290 12710 6290
-Wire Wire Line
-	12710 6290 12710 5820
-Wire Wire Line
-	12710 6290 12175 6290
-Connection ~ 12710 6290
 $Comp
 L Connector:DB9_Male_MountingHoles CN4
 U 1 1 62082825
-P 11625 6395
-F 0 "CN4" H 11543 7087 50  0000 C CNN
-F 1 "DB9_MALE" H 11543 6996 50  0000 C CNN
-F 2 "ReSeed:DB_9M" H 11625 6395 50  0001 C CNN
-F 3 " ~" H 11625 6395 50  0001 C CNN
-	1    11625 6395
+P 11585 6380
+F 0 "CN4" H 11503 7072 50  0000 C CNN
+F 1 "DB9_MALE" H 11503 6981 50  0000 C CNN
+F 2 "ReSeed:DB_9M" H 11585 6380 50  0001 C CNN
+F 3 " ~" H 11585 6380 50  0001 C CNN
+	1    11585 6380
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	11835 7145 11835 7265
-Connection ~ 11835 7145
-Wire Wire Line
-	11835 7145 11625 7145
 $Comp
 L power:GND #PWR028
 U 1 1 623F70B1
-P 11835 7265
-F 0 "#PWR028" H 11835 7015 50  0001 C CNN
-F 1 "GND" H 11840 7092 50  0000 C CNN
-F 2 "" H 11835 7265 50  0001 C CNN
-F 3 "" H 11835 7265 50  0001 C CNN
-	1    11835 7265
+P 11795 7255
+F 0 "#PWR028" H 11795 7005 50  0001 C CNN
+F 1 "GND" H 11800 7082 50  0000 C CNN
+F 2 "" H 11795 7255 50  0001 C CNN
+F 3 "" H 11795 7255 50  0001 C CNN
+	1    11795 7255
 	-1   0    0    -1  
 $EndComp
-Text Notes 12825 4920 0    50   ~ 0
+Text Notes 13470 4910 0    50   ~ 0
 ANALOG PADDLE/\nJOYSTICK PORT
 $Comp
 L C16-Exp-Port:C16-Exp-Port CN1
@@ -986,13 +591,6 @@ F 4 "---" H 3140 2500 50  0001 C CNN "MouserPN"
 	1    3140 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2250 1300 2390 1300
-Wire Wire Line
-	3890 3700 4030 3700
-Connection ~ 4030 3700
-Wire Wire Line
-	4030 3700 4030 3895
 $Comp
 L power:GND #PWR022
 U 1 1 62418CFF
@@ -1004,15 +602,6 @@ F 3 "" H 4030 3895 50  0001 C CNN
 	1    4030 3895
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	4030 1300 3890 1300
-Wire Wire Line
-	4030 1300 4030 3700
-Wire Wire Line
-	2250 1300 2250 3700
-Wire Wire Line
-	2390 1400 2140 1400
-Connection ~ 2140 1400
 NoConn ~ 2390 1800
 NoConn ~ 2390 1900
 NoConn ~ 2390 2000
@@ -1024,38 +613,6 @@ NoConn ~ 2390 3400
 NoConn ~ 3890 1400
 NoConn ~ 3890 1600
 NoConn ~ 3890 1700
-Wire Wire Line
-	3890 1800 4280 1800
-Wire Wire Line
-	3890 1900 4280 1900
-Wire Wire Line
-	3890 2000 4280 2000
-Wire Wire Line
-	3890 2100 4280 2100
-Wire Wire Line
-	3890 2200 4280 2200
-Wire Wire Line
-	3890 2300 4280 2300
-Wire Wire Line
-	3890 2400 4280 2400
-Wire Wire Line
-	3890 2500 4280 2500
-Wire Wire Line
-	3890 2600 4280 2600
-Wire Wire Line
-	3890 2700 4280 2700
-Wire Wire Line
-	3890 2800 4280 2800
-Wire Wire Line
-	3890 2900 4280 2900
-Wire Wire Line
-	3890 3000 4280 3000
-Wire Wire Line
-	3890 3100 4280 3100
-Wire Wire Line
-	3890 3200 4280 3200
-Wire Wire Line
-	3890 3300 4280 3300
 Entry Wire Line
 	4380 1700 4280 1800
 Entry Wire Line
@@ -1088,39 +645,15 @@ Entry Wire Line
 	4380 3100 4280 3200
 Entry Wire Line
 	4380 3200 4280 3300
-Wire Wire Line
-	3890 1500 4280 1500
 Text Label 4280 1500 2    50   ~ 0
 ~reset
-Wire Bus Line
-	4380 1700 4735 1700
 Text Label 4735 1700 2    50   ~ 0
 a[0..15]
 NoConn ~ 2390 1600
-Wire Wire Line
-	2390 1700 1785 1700
 Text Label 1785 1700 0    50   ~ 0
 r_~w
-Wire Wire Line
-	2390 2400 1785 2400
 Text Label 1785 2400 0    50   ~ 0
 mux
-Wire Wire Line
-	2390 2600 1785 2600
-Wire Wire Line
-	2390 2700 1785 2700
-Wire Wire Line
-	2390 2800 1785 2800
-Wire Wire Line
-	2390 2900 1785 2900
-Wire Wire Line
-	2390 3000 1785 3000
-Wire Wire Line
-	2390 3100 1785 3100
-Wire Wire Line
-	2390 3200 1785 3200
-Wire Wire Line
-	2390 3300 1785 3300
 Entry Wire Line
 	1685 2500 1785 2600
 Entry Wire Line
@@ -1137,8 +670,6 @@ Entry Wire Line
 	1685 3100 1785 3200
 Entry Wire Line
 	1685 3200 1785 3300
-Wire Bus Line
-	1685 2500 1255 2500
 Text Label 1255 2500 0    50   ~ 0
 d[0..7]
 Text Label 1785 2600 0    50   ~ 0
@@ -1189,12 +720,8 @@ Text Label 4280 3200 2    50   ~ 0
 a1
 Text Label 4280 3300 2    50   ~ 0
 a0
-Wire Wire Line
-	2390 3500 1785 3500
 Text Label 1785 3500 0    50   ~ 0
 ext_audio
-Wire Wire Line
-	2390 3600 1785 3600
 $Comp
 L power:GND #PWR037
 U 1 1 629242BA
@@ -1218,10 +745,6 @@ F 4 "810-FG28X7R1H104KNT0" H 1030 9725 50  0001 C CNN "MouserPN"
 	1    1030 9725
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1320 10315 1320 10410
-Wire Wire Line
-	1320 9115 1320 9015
 $Comp
 L power:+5V #PWR036
 U 1 1 629247C8
@@ -1233,26 +756,6 @@ F 3 "" H 1320 9015 50  0001 C CNN
 	1    1320 9015
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1030 9875 1030 10315
-Wire Wire Line
-	1030 10315 1320 10315
-Wire Wire Line
-	1625 10315 1625 10225
-Connection ~ 1320 10315
-Wire Wire Line
-	1320 10315 1625 10315
-Wire Wire Line
-	1030 9575 1030 9115
-Wire Wire Line
-	1030 9115 1320 9115
-Wire Wire Line
-	1625 9115 1625 9225
-Connection ~ 1320 9115
-Wire Wire Line
-	1320 9115 1625 9115
-Wire Wire Line
-	2695 6190 2540 6190
 $Comp
 L power:GND #PWR011
 U 1 1 629E9F85
@@ -1264,22 +767,6 @@ F 3 "" H 2540 6515 50  0001 C CNN
 	1    2540 6515
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2905 9700 2725 9700
-Wire Wire Line
-	2725 9700 2725 9580
-Wire Wire Line
-	2725 9700 2725 9800
-Wire Wire Line
-	2725 9800 2905 9800
-Connection ~ 2725 9700
-Wire Wire Line
-	2905 9900 2725 9900
-Wire Wire Line
-	2725 9900 2725 9800
-Connection ~ 2725 9800
-Wire Wire Line
-	2695 6390 2270 6390
 Text Label 2270 6390 0    50   ~ 0
 mux
 $Comp
@@ -1300,32 +787,10 @@ NoConn ~ 3905 9900
 NoConn ~ 3695 6190
 NoConn ~ 3695 6290
 NoConn ~ 3695 6390
-Wire Wire Line
-	6510 1520 7345 1520
-Wire Wire Line
-	7150 1020 7150 1420
-Wire Wire Line
-	7345 1820 6960 1820
 Text Label 6960 1820 0    50   ~ 0
 ~reset
-Wire Wire Line
-	7345 2020 6960 2020
-Wire Wire Line
-	7345 2120 6960 2120
-Wire Wire Line
-	7345 2220 7220 2220
-Wire Wire Line
-	7345 2320 7220 2320
-Wire Wire Line
-	7345 2420 7220 2420
-Wire Wire Line
-	7345 2520 7220 2520
-Wire Wire Line
-	7345 2620 7220 2620
 Text Label 6960 2020 0    50   ~ 0
 r_~w
-Wire Wire Line
-	3695 6090 3865 6090
 Text Label 6960 1920 0    50   ~ 0
 sidclk
 Entry Wire Line
@@ -1338,8 +803,6 @@ Entry Wire Line
 	7220 2520 7120 2620
 Entry Wire Line
 	7220 2620 7120 2720
-Wire Bus Line
-	7120 2720 6745 2720
 Text Label 6745 2720 0    50   ~ 0
 a[0..15]
 Text Label 7220 2220 0    50   ~ 0
@@ -1401,10 +864,6 @@ F 4 "810-FG28X7R1H104KNT0" H 8980 7340 50  0001 C CNN "MouserPN"
 	1    8980 7340
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8980 7490 8980 7585
-Wire Wire Line
-	8980 7190 8980 7090
 $Comp
 L power:+5V #PWR026
 U 1 1 62DC239B
@@ -1440,8 +899,6 @@ Entry Wire Line
 	9365 5955 9265 6055
 Entry Wire Line
 	9365 6055 9265 6155
-Wire Bus Line
-	9365 5800 7165 5800
 Text Label 6960 2120 0    50   ~ 0
 ~sid
 $Comp
@@ -1467,15 +924,6 @@ F 4 "810-FG28C0G1H102JNT6" H 11525 1570 50  0001 C CNN "MouserPN"
 	1    11525 1570
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11525 1420 11525 1320
-Wire Wire Line
-	11280 1320 11525 1320
-Connection ~ 11525 1320
-Wire Wire Line
-	11525 1320 11895 1320
-Wire Wire Line
-	11525 1720 11525 1825
 $Comp
 L power:GND #PWR05
 U 1 1 6305D653
@@ -1520,22 +968,6 @@ F 3 "~" H 12540 1905 50  0001 C CNN
 	1    12540 1905
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	12425 1625 12540 1625
-Wire Wire Line
-	12540 1625 12540 1755
-Wire Wire Line
-	12540 1625 12540 1520
-Connection ~ 12540 1625
-Wire Wire Line
-	12125 1625 11895 1625
-Wire Wire Line
-	11895 1625 11895 1320
-Connection ~ 11895 1320
-Wire Wire Line
-	11895 1320 12240 1320
-Wire Wire Line
-	12540 2055 12540 2130
 $Comp
 L power:GND #PWR06
 U 1 1 630E5DAC
@@ -1547,8 +979,6 @@ F 3 "" H 12540 2130 50  0001 C CNN
 	1    12540 2130
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12540 1625 12880 1625
 $Comp
 L Device:R_POT RV1
 U 1 1 6310F5D4
@@ -1560,12 +990,6 @@ F 3 "~" H 13420 1905 50  0001 C CNN
 	1    13420 1905
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13420 1755 13420 1625
-Wire Wire Line
-	13420 1625 13180 1625
-Wire Wire Line
-	13420 2055 13420 2130
 $Comp
 L power:GND #PWR07
 U 1 1 631242F4
@@ -1579,8 +1003,6 @@ F 3 "" H 13420 2130 50  0001 C CNN
 $EndComp
 Text Notes 13490 2030 0    50   ~ 0
 VOLUME
-Wire Wire Line
-	12540 1120 12540 940 
 $Comp
 L power:+9V #PWR01
 U 1 1 63161AB9
@@ -1605,10 +1027,6 @@ F 3 "" H 14650 3600 50  0001 C CNN
 	1    14650 3600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10400 3015 10400 1420
-Wire Wire Line
-	9345 1420 10400 1420
 $Comp
 L Device:C C9
 U 1 1 633EF69E
@@ -1632,10 +1050,6 @@ F 3 "~" H 13515 3295 50  0001 C CNN
 	1    13515 3295
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	13515 3015 13515 3145
-Wire Wire Line
-	13515 3445 13515 3520
 $Comp
 L power:GND #PWR017
 U 1 1 633F03DD
@@ -1647,9 +1061,6 @@ F 3 "" H 13515 3520 50  0001 C CNN
 	1    13515 3520
 	1    0    0    -1  
 $EndComp
-Connection ~ 13515 3015
-Wire Wire Line
-	13515 3015 12685 3015
 Text Notes 2250 8695 0    50   ~ 0
 SPARES
 $Comp
@@ -1663,24 +1074,8 @@ F 3 "~" H 14965 3215 50  0001 C CNN
 	1    14965 3215
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	14765 3315 14650 3315
-Wire Wire Line
-	14650 3315 14650 3600
-Wire Wire Line
-	13515 3015 14520 3015
-Wire Wire Line
-	14650 2915 14765 2915
-Connection ~ 14650 3315
-Wire Wire Line
-	14765 3215 14520 3215
-Wire Wire Line
-	14520 3215 14520 3015
-Connection ~ 14520 3015
-Wire Wire Line
-	14520 3015 14765 3015
-Text Notes 12200 8065 0    50   ~ 0
-WHAT HAPPENS IF YOU WRITE TO THE PORT?\nYOU CAN CREATE SHORT CIRCUITS!\nTODO: CONSIDER ADDING DIODES, CONNECTING\nPIN 1 TO VCC OR SWITCHING TO 74244
+Text Notes 13580 7925 0    50   ~ 0
+EXCERPT FROM DATASHEET: "IT IS [...] VALID TO\nTIE BOTH SIDES OF AN UNUSED TRANSCEIVER\nDIRECTLY TO GROUND OR VCC"
 Text Notes 12445 1180 2    50   ~ 0
 2SC1815 COULD BE USED\nFOR LOWER NOISE, BUT IT\nHAS A DIFFERENT PINOUT
 Text Notes 14085 4110 0    50   ~ 0
@@ -1726,28 +1121,6 @@ F 4 "710-860020573008" H 5260 9490 50  0001 C CNN "MouserPN"
 	1    5260 9490
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5260 9340 5260 9085
-Wire Wire Line
-	5260 9085 5630 9085
-Wire Wire Line
-	5990 9085 5990 9340
-Wire Wire Line
-	5630 9020 5630 9085
-Connection ~ 5630 9085
-Wire Wire Line
-	5630 9085 5990 9085
-Wire Wire Line
-	5260 9640 5260 9895
-Wire Wire Line
-	5260 9895 5630 9895
-Wire Wire Line
-	5990 9895 5990 9640
-Wire Wire Line
-	5630 9960 5630 9895
-Connection ~ 5630 9895
-Wire Wire Line
-	5630 9895 5990 9895
 $Comp
 L power:GND #PWR040
 U 1 1 63FDB38B
@@ -1761,14 +1134,6 @@ F 3 "" H 5630 9960 50  0001 C CNN
 $EndComp
 Text Notes 5140 10455 0    50   ~ 0
 ADDITIONAL DECOUPLING\nFOR IMPROVED STABILITY
-Wire Notes Line
-	5895 1175 6680 1175
-Wire Notes Line
-	6680 1175 6680 1950
-Wire Notes Line
-	6680 1950 5895 1950
-Wire Notes Line
-	5895 1950 5895 1175
 $Comp
 L void:Void V0
 U 1 1 64138BAD
@@ -1791,7 +1156,7 @@ F 3 "" H 15465 9740 50  0001 C CNN
 	1    15465 9740
 	1    0    0    -1  
 $EndComp
-Text Notes 12500 5280 0    50   ~ 0
+Text Notes 13145 5270 0    50   ~ 0
 ANY VALUE BETWEEN\n1K-10K IS PROBABLY FINE
 Text Notes 14490 1315 0    50   ~ 0
 AUDIO IS OUTPUT TO EXT_AUDIO,\nUNLESS A JACK IS INSERTED
@@ -1809,18 +1174,6 @@ F 3 "~" H 14965 1845 50  0001 C CNN
 $EndComp
 Text Label 14330 1545 0    50   ~ 0
 ext_audio
-Wire Wire Line
-	14765 1545 14330 1545
-Wire Wire Line
-	14650 1645 14765 1645
-Wire Wire Line
-	14650 1845 14650 1645
-Wire Wire Line
-	14765 1845 14650 1845
-Wire Wire Line
-	14650 1945 14650 2230
-Wire Wire Line
-	14765 1945 14650 1945
 $Comp
 L power:GND #PWR010
 U 1 1 63261338
@@ -1832,13 +1185,6 @@ F 3 "" H 14650 2230 50  0001 C CNN
 	1    14650 2230
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13570 1905 14330 1905
-Wire Wire Line
-	14330 1905 14330 1645
-Wire Wire Line
-	14330 1645 14650 1645
-Connection ~ 14650 1645
 $Comp
 L Device:R R3
 U 1 1 64257402
@@ -1850,10 +1196,6 @@ F 3 "~" H 10705 1600 50  0001 C CNN
 	1    10705 1600
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	10705 1320 10705 1450
-Wire Wire Line
-	10705 1750 10705 1825
 $Comp
 L power:GND #PWR02
 U 1 1 64257B2C
@@ -1865,14 +1207,6 @@ F 3 "" H 10705 1825 50  0001 C CNN
 	1    10705 1825
 	1    0    0    -1  
 $EndComp
-Connection ~ 10705 1320
-Wire Wire Line
-	10705 1320 10980 1320
-Wire Wire Line
-	12540 940  12880 940 
-Connection ~ 12540 940 
-Wire Wire Line
-	12540 940  12540 815 
 $Comp
 L Device:C C7
 U 1 1 642BE109
@@ -1884,10 +1218,6 @@ F 3 "~" H 13030 940 50  0001 C CNN
 	1    13030 940 
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	13180 940  13420 940 
-Wire Wire Line
-	13420 940  13420 1085
 $Comp
 L power:GND #PWR09
 U 1 1 642F132F
@@ -1903,11 +1233,6 @@ Text Label 9345 1420 0    50   ~ 0
 audio_in
 Text Label 9230 1320 0    50   ~ 0
 audio_out
-Connection ~ 11655 3015
-Wire Wire Line
-	11655 3015 10400 3015
-Wire Wire Line
-	12385 3015 11655 3015
 $Comp
 L Device:R_POT RV2
 U 1 1 64350FB5
@@ -1941,10 +1266,6 @@ F 3 "" H 11805 4110 50  0001 C CNN
 	1    11805 4110
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11805 4035 11805 4110
-Wire Wire Line
-	11655 3015 11655 3350
 $Comp
 L Connector:Conn_01x03_Male SW1
 U 1 1 6436DD9D
@@ -1956,13 +1277,7 @@ F 3 "~" H 11295 3350 50  0001 C CNN
 	1    11295 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11495 3350 11655 3350
-Wire Wire Line
-	11495 3450 11655 3450
 NoConn ~ 11495 3250
-Wire Wire Line
-	11805 3600 11805 3735
 NoConn ~ 11955 3450
 $Comp
 L Device:C C17
@@ -1976,16 +1291,6 @@ F 4 "810-FG28X7R1H104KNT0" H 9715 10145 50  0001 C CNN "MouserPN"
 	1    9715 10145
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9715 10295 9715 10405
-Connection ~ 9715 10405
-Wire Wire Line
-	9715 10405 10270 10405
-Wire Wire Line
-	9715 9995 9715 9815
-Connection ~ 9715 9815
-Wire Wire Line
-	9715 9815 9870 9815
 $Comp
 L Device:CP1 C8
 U 1 1 6310CD9B
@@ -2010,18 +1315,10 @@ F 3 "~" H 14550 2915 50  0001 C CNN
 	1    14550 2915
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14450 2915 14335 2915
-Wire Wire Line
-	14335 2915 14335 3315
-Wire Wire Line
-	14335 3315 14650 3315
 Text Notes 10465 2240 0    50   ~ 0
 MOUNT FOR MOS\n6581 ONLY
 Text Label 5025 6090 2    50   ~ 0
 sidclk
-Wire Wire Line
-	7345 1920 6960 1920
 $Comp
 L Device:R R11
 U 1 1 6310D8E4
@@ -2033,8 +1330,6 @@ F 3 "~" H 4015 6090 50  0001 C CNN
 	1    4015 6090
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4165 6090 4340 6090
 $Comp
 L Device:C C20
 U 1 1 631442E0
@@ -2046,13 +1341,6 @@ F 3 "~" H 4340 6305 50  0001 C CNN
 	1    4340 6305
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4340 6155 4340 6090
-Wire Wire Line
-	4340 6455 4340 6515
-Connection ~ 4340 6090
-Wire Wire Line
-	4340 6090 5025 6090
 $Comp
 L power:GND #PWR041
 U 1 1 6316115D
@@ -2064,14 +1352,6 @@ F 3 "" H 4340 6515 50  0001 C CNN
 	1    4340 6515
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	3780 5775 4665 5775
-Wire Notes Line
-	4665 5775 4665 6810
-Wire Notes Line
-	4665 6810 3780 6810
-Wire Notes Line
-	3780 6810 3780 5775
 Text Notes 3420 5550 0    50   ~ 0
 SID CLOCK\nGENERATION
 Text Notes 4695 6775 0    50   ~ 0
@@ -2080,20 +1360,10 @@ Text Notes 2070 8175 0    50   ~ 0
 THE DELAY CIRCUIT IS NEEDED IN ORDER TO "SHIFT" THE GENERATED\nCLOCK FORWARD ENOUGH TO MAKE SURE THAT READS/WRITES DURING\nDOUBLE CLOCK PERIODS HAPPEN WITH /CS LOW AND CLOCK HIGH, AS\nREQUIRED BY THE SID DATASHEET.\n\nWE ALSO GENERATE AN ACTIVE-HIGH RESET SIGNAL THROUGH THE GAL\nIN ORDER TO LET THE CD4520 ALWAYS BE IN A KNOWN CONDITION AT\nPOWER-ON/RESET.\n\nTHESE TWO THINGS DO NOT SEEM TO BE REQUIRED BY THE OLDER\n4520'S (THE SAME ONES THAT SOLDER HIMSELF USED ON THE CARDS\nHE BUILT), IN THIS CASE JUST SHORT R11 AND DO NOT MOUNT C20, THE\nRESET SHOULD NOT HURT ANYWAY.\n\nSEE https://plus4world.powweb.com/forum/45294 FOR MORE DETAILS
 Text Notes 4720 6200 0    50   ~ 0
 ~~886 kHz
-Wire Wire Line
-	2140 1400 2140 1155
 Text Label 9265 6255 2    50   ~ 0
 ~reset
-Wire Wire Line
-	9265 6255 8765 6255
 Text Label 2270 6290 0    50   ~ 0
 reset
-Wire Wire Line
-	2540 6190 2540 6515
-Wire Wire Line
-	2695 6290 2270 6290
-Wire Wire Line
-	9265 6355 8765 6355
 Text Label 9265 6355 2    50   ~ 0
 reset
 Text Notes 9425 6455 0    50   ~ 0
@@ -2106,27 +1376,828 @@ Text Label 9265 6755 2    50   ~ 0
 a5
 Text Label 9265 6655 2    50   ~ 0
 phi2
-Wire Wire Line
-	9265 6755 8765 6755
 Text Notes 9425 6345 0    50   ~ 0
 ACTIVE-HIGH RESET SIGNAL IS OUR ADDITION\nWRT SOLDER'S ORIGINAL DESIGN. THIS, AND\nROUTING DIFFICULTIES, FORCED US TO SHIFT\nSOME SIGNALS TO DIFFERENT PINS.\nDO *NOT* USE SOLDER'S GAL-SID.JED!
-Wire Wire Line
-	9265 6655 8765 6655
 NoConn ~ 7765 6955
 Entry Wire Line
 	9365 6655 9265 6755
+Wire Wire Line
+	2390 3700 2250 3700
+Connection ~ 2250 3700
+Wire Wire Line
+	2250 3700 2250 3895
+Wire Wire Line
+	2390 1500 2140 1500
+Wire Wire Line
+	2140 1500 2140 1400
+Wire Wire Line
+	7765 6055 7265 6055
+Wire Wire Line
+	7765 6155 7265 6155
+Wire Wire Line
+	7765 6255 7265 6255
+Wire Wire Line
+	7765 6355 7265 6355
+Wire Wire Line
+	7765 6455 7265 6455
+Wire Wire Line
+	7765 6555 7265 6555
+Wire Wire Line
+	7765 6655 7265 6655
+Wire Wire Line
+	7765 6755 7265 6755
+Wire Wire Line
+	7765 6855 7265 6855
+Wire Wire Line
+	9265 6055 8765 6055
+Wire Wire Line
+	9265 6155 8765 6155
+Wire Wire Line
+	9265 6455 8765 6455
+Wire Wire Line
+	9265 6555 8765 6555
+Wire Wire Line
+	8265 7255 8265 7330
+Wire Wire Line
+	8265 5855 8265 5745
+Wire Wire Line
+	8320 10015 8320 10405
+Wire Wire Line
+	7720 9615 7585 9615
+Wire Wire Line
+	7585 9615 7585 9815
+Wire Wire Line
+	7585 10405 8320 10405
+Connection ~ 8320 10405
+Wire Wire Line
+	8320 10405 8320 10455
+Wire Wire Line
+	7720 9815 7585 9815
+Connection ~ 7585 9815
+Wire Wire Line
+	7585 9815 7585 10405
+Wire Wire Line
+	8720 9415 8860 9415
+Wire Wire Line
+	8860 9415 8860 10405
+Wire Wire Line
+	8860 10405 8320 10405
+Wire Wire Line
+	7720 9215 7550 9215
+Wire Wire Line
+	7550 9215 7550 8915
+Wire Wire Line
+	7720 9415 6930 9415
+Wire Wire Line
+	6930 9415 6930 9315
+Wire Wire Line
+	6930 9015 6930 8915
+Wire Wire Line
+	6930 8915 7550 8915
+Connection ~ 7550 8915
+Wire Wire Line
+	7550 8915 7550 8530
+Wire Wire Line
+	8720 9815 9015 9815
+Wire Wire Line
+	9015 9815 9015 8530
+Wire Wire Line
+	7265 9665 7265 9515
+Wire Wire Line
+	7265 9515 7720 9515
+Wire Wire Line
+	7265 9965 7265 10405
+Wire Wire Line
+	7265 10405 7585 10405
+Connection ~ 7585 10405
+Wire Wire Line
+	6585 9320 6585 9415
+Wire Wire Line
+	6585 9415 6930 9415
+Connection ~ 6930 9415
+Wire Wire Line
+	6585 9020 6585 8765
+Wire Wire Line
+	6585 8765 8860 8765
+Wire Wire Line
+	8860 8765 8860 9215
+Wire Wire Line
+	8860 9215 8720 9215
+Wire Wire Line
+	8720 9315 8860 9315
+Wire Wire Line
+	8860 9315 8860 9215
+Connection ~ 8860 9215
+Wire Wire Line
+	10170 9815 10270 9815
+Wire Wire Line
+	10270 9815 10270 9915
+Wire Wire Line
+	10270 9815 10270 8915
+Wire Wire Line
+	10270 8915 7635 8915
+Wire Wire Line
+	7635 8915 7635 9315
+Wire Wire Line
+	7635 9315 7720 9315
+Connection ~ 10270 9815
+Wire Wire Line
+	9015 9995 9015 9815
+Connection ~ 9015 9815
+Wire Wire Line
+	9015 9815 9715 9815
+Wire Wire Line
+	9015 10295 9015 10405
+Wire Wire Line
+	9015 10405 9715 10405
+Wire Wire Line
+	10270 10405 10270 10215
+Wire Wire Line
+	8860 10405 9015 10405
+Connection ~ 8860 10405
+Connection ~ 9015 10405
+Wire Wire Line
+	8845 1420 8950 1420
+Wire Wire Line
+	8950 1420 8950 1185
+Wire Wire Line
+	7345 2720 7225 2720
+Wire Wire Line
+	7225 2720 7225 2855
+Wire Wire Line
+	7800 3775 7800 3870
+Wire Wire Line
+	7800 3475 7800 3375
+Wire Wire Line
+	7345 1420 7150 1420
+Wire Wire Line
+	7150 1020 6510 1020
+Wire Wire Line
+	6510 1020 6510 1155
+Wire Wire Line
+	6510 1455 6510 1520
+Wire Wire Line
+	7345 1620 6510 1620
+Wire Wire Line
+	6510 1620 6510 1675
+Wire Wire Line
+	7345 1720 6670 1720
+Wire Wire Line
+	6670 1720 6670 2015
+Wire Wire Line
+	6670 2015 6510 2015
+Wire Wire Line
+	6510 2015 6510 1975
+Wire Wire Line
+	8845 1720 9120 1720
+Wire Wire Line
+	9120 1720 9120 1185
+Wire Wire Line
+	8345 3775 8345 3870
+Wire Wire Line
+	8345 3475 8345 3375
+Wire Wire Line
+	8845 1920 9230 1920
+Wire Wire Line
+	8845 2020 9505 2020
+Wire Wire Line
+	8845 2120 9505 2120
+Wire Wire Line
+	8845 2220 9505 2220
+Wire Wire Line
+	8845 2320 9505 2320
+Wire Wire Line
+	8845 2420 9505 2420
+Wire Wire Line
+	8845 2520 9505 2520
+Wire Wire Line
+	8845 2620 9505 2620
+Wire Wire Line
+	8845 2720 9505 2720
+Wire Wire Line
+	14985 6380 15390 6380
+Wire Wire Line
+	14985 6280 15390 6280
+Wire Wire Line
+	14985 6180 15390 6180
+Wire Wire Line
+	14985 6080 15390 6080
+Wire Wire Line
+	14985 5980 15390 5980
+Wire Bus Line
+	15490 5880 15805 5880
+Wire Wire Line
+	14485 7280 14485 7320
+Wire Wire Line
+	14485 5680 14485 5595
+Wire Wire Line
+	13985 6880 13450 6880
+Wire Wire Line
+	13985 6980 13450 6980
+Wire Wire Line
+	15700 7160 15700 7255
+Wire Wire Line
+	15700 6860 15700 6760
+Wire Wire Line
+	12020 7135 11795 7135
+Wire Wire Line
+	11585 7135 11585 6980
+Wire Wire Line
+	13055 5980 13055 6780
+Wire Wire Line
+	13055 6780 12495 6780
+Wire Wire Line
+	13985 5980 13055 5980
+Wire Wire Line
+	13155 6080 13155 6580
+Wire Wire Line
+	13155 6580 12495 6580
+Wire Wire Line
+	13985 6080 13155 6080
+Wire Wire Line
+	13255 6180 13255 6380
+Wire Wire Line
+	13255 6380 12495 6380
+Wire Wire Line
+	13985 6180 13255 6180
+Wire Wire Line
+	12135 6180 12135 6280
+Wire Wire Line
+	12135 6180 11885 6180
+Wire Wire Line
+	11885 5980 12135 5980
+Wire Wire Line
+	11885 6080 12135 6080
+Wire Wire Line
+	8845 1820 8950 1820
+Wire Bus Line
+	9605 1920 10120 1920
+Wire Wire Line
+	9865 1720 10085 1720
+Wire Wire Line
+	9865 1620 10085 1620
+Wire Wire Line
+	9505 1720 9565 1720
+Wire Wire Line
+	9425 1620 9565 1620
+Wire Wire Line
+	9425 1820 9425 1620
+Wire Wire Line
+	9505 1920 9505 1720
+Wire Wire Line
+	8845 1620 9345 1620
+Wire Wire Line
+	9345 1620 9345 1420
+Wire Wire Line
+	8845 1520 9230 1520
+Wire Wire Line
+	9230 1520 9230 1320
+Wire Wire Line
+	9230 1320 10705 1320
+Wire Wire Line
+	8950 3135 8950 3255
+Wire Wire Line
+	8950 3255 9095 3255
+Wire Wire Line
+	9230 3255 9230 3135
+Wire Wire Line
+	9095 3255 9095 3350
+Connection ~ 9095 3255
+Wire Wire Line
+	9095 3255 9230 3255
+Wire Wire Line
+	8950 2835 8950 1820
+Connection ~ 8950 1820
+Wire Wire Line
+	8950 1820 9425 1820
+Wire Wire Line
+	9230 2835 9230 1920
+Connection ~ 9230 1920
+Wire Wire Line
+	9230 1920 9505 1920
+Wire Wire Line
+	12935 5305 12995 5305
+Wire Wire Line
+	13055 5305 13055 5410
+Wire Wire Line
+	12935 5305 12935 6480
+Wire Wire Line
+	12995 5305 12995 5235
+Connection ~ 12995 5305
+Wire Wire Line
+	12995 5305 13055 5305
+Wire Wire Line
+	13055 5810 13055 5980
+Connection ~ 13055 5980
+Wire Wire Line
+	13155 6080 13155 5810
+Connection ~ 13155 6080
+Wire Wire Line
+	13255 5810 13255 6180
+Connection ~ 13255 6180
+Wire Wire Line
+	13455 6680 12495 6680
+Wire Wire Line
+	13455 6380 13455 6680
+Wire Wire Line
+	13985 6380 13455 6380
+Wire Wire Line
+	13455 5810 13455 6380
+Connection ~ 13455 6380
+Wire Wire Line
+	13985 6280 13355 6280
+Wire Wire Line
+	13355 6280 13355 5810
+Wire Wire Line
+	13355 6280 12495 6280
+Connection ~ 13355 6280
+Wire Wire Line
+	11795 7135 11795 7255
+Connection ~ 11795 7135
+Wire Wire Line
+	11795 7135 11585 7135
+Wire Wire Line
+	2250 1300 2390 1300
+Wire Wire Line
+	3890 3700 4030 3700
+Connection ~ 4030 3700
+Wire Wire Line
+	4030 3700 4030 3895
+Wire Wire Line
+	4030 1300 3890 1300
+Wire Wire Line
+	4030 1300 4030 3700
+Wire Wire Line
+	2250 1300 2250 3700
+Wire Wire Line
+	2390 1400 2140 1400
+Connection ~ 2140 1400
+Wire Wire Line
+	3890 1800 4280 1800
+Wire Wire Line
+	3890 1900 4280 1900
+Wire Wire Line
+	3890 2000 4280 2000
+Wire Wire Line
+	3890 2100 4280 2100
+Wire Wire Line
+	3890 2200 4280 2200
+Wire Wire Line
+	3890 2300 4280 2300
+Wire Wire Line
+	3890 2400 4280 2400
+Wire Wire Line
+	3890 2500 4280 2500
+Wire Wire Line
+	3890 2600 4280 2600
+Wire Wire Line
+	3890 2700 4280 2700
+Wire Wire Line
+	3890 2800 4280 2800
+Wire Wire Line
+	3890 2900 4280 2900
+Wire Wire Line
+	3890 3000 4280 3000
+Wire Wire Line
+	3890 3100 4280 3100
+Wire Wire Line
+	3890 3200 4280 3200
+Wire Wire Line
+	3890 3300 4280 3300
+Wire Wire Line
+	3890 1500 4280 1500
+Wire Bus Line
+	4380 1700 4735 1700
+Wire Wire Line
+	2390 1700 1785 1700
+Wire Wire Line
+	2390 2400 1785 2400
+Wire Wire Line
+	2390 2600 1785 2600
+Wire Wire Line
+	2390 2700 1785 2700
+Wire Wire Line
+	2390 2800 1785 2800
+Wire Wire Line
+	2390 2900 1785 2900
+Wire Wire Line
+	2390 3000 1785 3000
+Wire Wire Line
+	2390 3100 1785 3100
+Wire Wire Line
+	2390 3200 1785 3200
+Wire Wire Line
+	2390 3300 1785 3300
+Wire Bus Line
+	1685 2500 1255 2500
+Wire Wire Line
+	2390 3500 1785 3500
+Wire Wire Line
+	2390 3600 1785 3600
+Wire Wire Line
+	1320 10315 1320 10410
+Wire Wire Line
+	1320 9115 1320 9015
+Wire Wire Line
+	1030 9875 1030 10315
+Wire Wire Line
+	1030 10315 1320 10315
+Wire Wire Line
+	1625 10315 1625 10225
+Connection ~ 1320 10315
+Wire Wire Line
+	1320 10315 1625 10315
+Wire Wire Line
+	1030 9575 1030 9115
+Wire Wire Line
+	1030 9115 1320 9115
+Wire Wire Line
+	1625 9115 1625 9225
+Connection ~ 1320 9115
+Wire Wire Line
+	1320 9115 1625 9115
+Wire Wire Line
+	2695 6190 2540 6190
+Wire Wire Line
+	2905 9700 2725 9700
+Wire Wire Line
+	2725 9700 2725 9580
+Wire Wire Line
+	2725 9700 2725 9800
+Wire Wire Line
+	2725 9800 2905 9800
+Connection ~ 2725 9700
+Wire Wire Line
+	2905 9900 2725 9900
+Wire Wire Line
+	2725 9900 2725 9800
+Connection ~ 2725 9800
+Wire Wire Line
+	2695 6390 2270 6390
+Wire Wire Line
+	6510 1520 7345 1520
+Wire Wire Line
+	7150 1020 7150 1420
+Wire Wire Line
+	7345 1820 6960 1820
+Wire Wire Line
+	7345 2020 6960 2020
+Wire Wire Line
+	7345 2120 6960 2120
+Wire Wire Line
+	7345 2220 7220 2220
+Wire Wire Line
+	7345 2320 7220 2320
+Wire Wire Line
+	7345 2420 7220 2420
+Wire Wire Line
+	7345 2520 7220 2520
+Wire Wire Line
+	7345 2620 7220 2620
+Wire Wire Line
+	3695 6090 3865 6090
+Wire Bus Line
+	7120 2720 6745 2720
+Wire Wire Line
+	8980 7490 8980 7585
+Wire Wire Line
+	8980 7190 8980 7090
+Wire Bus Line
+	9365 5800 7165 5800
+Wire Wire Line
+	11525 1420 11525 1320
+Wire Wire Line
+	11280 1320 11525 1320
+Connection ~ 11525 1320
+Wire Wire Line
+	11525 1320 11895 1320
+Wire Wire Line
+	11525 1720 11525 1825
+Wire Wire Line
+	12425 1625 12540 1625
+Wire Wire Line
+	12540 1625 12540 1755
+Wire Wire Line
+	12540 1625 12540 1520
+Connection ~ 12540 1625
+Wire Wire Line
+	12125 1625 11895 1625
+Wire Wire Line
+	11895 1625 11895 1320
+Connection ~ 11895 1320
+Wire Wire Line
+	11895 1320 12240 1320
+Wire Wire Line
+	12540 2055 12540 2130
+Wire Wire Line
+	12540 1625 12880 1625
+Wire Wire Line
+	13420 1755 13420 1625
+Wire Wire Line
+	13420 1625 13180 1625
+Wire Wire Line
+	13420 2055 13420 2130
+Wire Wire Line
+	12540 1120 12540 940 
+Wire Wire Line
+	10400 3015 10400 1420
+Wire Wire Line
+	9345 1420 10400 1420
+Wire Wire Line
+	13515 3015 13515 3145
+Wire Wire Line
+	13515 3445 13515 3520
+Connection ~ 13515 3015
+Wire Wire Line
+	13515 3015 12685 3015
+Wire Wire Line
+	14765 3315 14650 3315
+Wire Wire Line
+	14650 3315 14650 3600
+Wire Wire Line
+	13515 3015 14520 3015
+Wire Wire Line
+	14650 2915 14765 2915
+Connection ~ 14650 3315
+Wire Wire Line
+	14765 3215 14520 3215
+Wire Wire Line
+	14520 3215 14520 3015
+Connection ~ 14520 3015
+Wire Wire Line
+	14520 3015 14765 3015
+Wire Wire Line
+	5260 9340 5260 9085
+Wire Wire Line
+	5260 9085 5630 9085
+Wire Wire Line
+	5990 9085 5990 9340
+Wire Wire Line
+	5630 9020 5630 9085
+Connection ~ 5630 9085
+Wire Wire Line
+	5630 9085 5990 9085
+Wire Wire Line
+	5260 9640 5260 9895
+Wire Wire Line
+	5260 9895 5630 9895
+Wire Wire Line
+	5990 9895 5990 9640
+Wire Wire Line
+	5630 9960 5630 9895
+Connection ~ 5630 9895
+Wire Wire Line
+	5630 9895 5990 9895
+Wire Notes Line
+	5895 1175 6680 1175
+Wire Notes Line
+	6680 1175 6680 1950
+Wire Notes Line
+	6680 1950 5895 1950
+Wire Notes Line
+	5895 1950 5895 1175
+Wire Wire Line
+	14765 1545 14330 1545
+Wire Wire Line
+	14650 1645 14765 1645
+Wire Wire Line
+	14650 1845 14650 1645
+Wire Wire Line
+	14765 1845 14650 1845
+Wire Wire Line
+	14650 1945 14650 2230
+Wire Wire Line
+	14765 1945 14650 1945
+Wire Wire Line
+	13570 1905 14330 1905
+Wire Wire Line
+	14330 1905 14330 1645
+Wire Wire Line
+	14330 1645 14650 1645
+Connection ~ 14650 1645
+Wire Wire Line
+	10705 1320 10705 1450
+Wire Wire Line
+	10705 1750 10705 1825
+Connection ~ 10705 1320
+Wire Wire Line
+	10705 1320 10980 1320
+Wire Wire Line
+	12540 940  12880 940 
+Connection ~ 12540 940 
+Wire Wire Line
+	12540 940  12540 815 
+Wire Wire Line
+	13180 940  13420 940 
+Wire Wire Line
+	13420 940  13420 1085
+Connection ~ 11655 3015
+Wire Wire Line
+	11655 3015 10400 3015
+Wire Wire Line
+	12385 3015 11655 3015
+Wire Wire Line
+	11805 4035 11805 4110
+Wire Wire Line
+	11655 3015 11655 3350
+Wire Wire Line
+	11495 3350 11655 3350
+Wire Wire Line
+	11495 3450 11655 3450
+Wire Wire Line
+	11805 3600 11805 3735
+Wire Wire Line
+	9715 10295 9715 10405
+Connection ~ 9715 10405
+Wire Wire Line
+	9715 10405 10270 10405
+Wire Wire Line
+	9715 9995 9715 9815
+Connection ~ 9715 9815
+Wire Wire Line
+	9715 9815 9870 9815
+Wire Wire Line
+	14450 2915 14335 2915
+Wire Wire Line
+	14335 2915 14335 3315
+Wire Wire Line
+	14335 3315 14650 3315
+Wire Wire Line
+	7345 1920 6960 1920
+Wire Wire Line
+	4165 6090 4340 6090
+Wire Wire Line
+	4340 6155 4340 6090
+Wire Wire Line
+	4340 6455 4340 6515
+Connection ~ 4340 6090
+Wire Wire Line
+	4340 6090 5025 6090
+Wire Notes Line
+	3780 5775 4665 5775
+Wire Notes Line
+	4665 5775 4665 6810
+Wire Notes Line
+	4665 6810 3780 6810
+Wire Notes Line
+	3780 6810 3780 5775
+Wire Wire Line
+	2140 1400 2140 1155
+Wire Wire Line
+	9265 6255 8765 6255
+Wire Wire Line
+	2540 6190 2540 6515
+Wire Wire Line
+	2695 6290 2270 6290
+Wire Wire Line
+	9265 6355 8765 6355
+Wire Wire Line
+	9265 6755 8765 6755
+Wire Wire Line
+	9265 6655 8765 6655
+Wire Wire Line
+	12020 6280 12020 7135
+Wire Wire Line
+	11885 6280 12020 6280
+Wire Wire Line
+	12195 6780 11885 6780
+$Comp
+L Device:R_Pack05_SIP_Split RN2
+U 1 1 63A2AA82
+P 12345 6680
+F 0 "RN2" V 12380 6415 50  0000 C CNN
+F 1 "100" H 12433 6635 50  0001 L CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 12265 6680 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12345 6680 50  0001 C CNN
+	1    12345 6680
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Pack05_SIP_Split RN2
+U 2 1 63A28C60
+P 12345 6280
+F 0 "RN2" V 12305 6545 50  0000 C CNN
+F 1 "100" V 12229 6280 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 12265 6280 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12345 6280 50  0001 C CNN
+	2    12345 6280
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack05_SIP_Split RN2
+U 3 1 63A27F03
+P 12345 6380
+F 0 "RN2" V 12305 6645 50  0000 C CNN
+F 1 "100" V 12229 6380 50  0001 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 12265 6380 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12345 6380 50  0001 C CNN
+	3    12345 6380
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Pack05_SIP_Split RN2
+U 5 1 63A26FF8
+P 12345 6780
+F 0 "RN2" V 12305 7045 50  0000 C CNN
+F 1 "100" V 12455 6780 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 12265 6780 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12345 6780 50  0001 C CNN
+	5    12345 6780
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12195 6680 11885 6680
+Wire Wire Line
+	12195 6580 11885 6580
+Wire Wire Line
+	12195 6380 11885 6380
+Wire Wire Line
+	11885 6480 12935 6480
+Wire Wire Line
+	12195 6280 12135 6280
+$Comp
+L Device:R_Pack05_SIP_Split RN2
+U 4 1 63A29AC0
+P 12345 6580
+F 0 "RN2" V 12305 6845 50  0000 C CNN
+F 1 "100" H 12433 6535 50  0001 L CNN
+F 2 "Resistor_THT:R_Array_SIP10" V 12265 6580 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12345 6580 50  0001 C CNN
+	4    12345 6580
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Network05 RN1
+U 1 1 638C9A62
+P 13255 5610
+F 0 "RN1" H 13543 5656 50  0000 L CNN
+F 1 "3.3k" H 13543 5565 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP6" V 13630 5610 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 13255 5610 50  0001 C CNN
+	1    13255 5610
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS245 U3
+U 1 1 62081D66
+P 14485 6480
+F 0 "U3" H 14245 7130 50  0000 C CNN
+F 1 "74HCT245" H 14685 5820 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket_LongPads" H 14485 6480 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 14485 6480 50  0001 C CNN
+F 4 " 595-SN74HCT245N" H 14485 6480 50  0001 C CNN "MouserPN"
+	1    14485 6480
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13985 6480 13855 6480
+Wire Wire Line
+	13855 6480 13855 6580
+Wire Wire Line
+	13855 7320 14485 7320
+Connection ~ 14485 7320
+Wire Wire Line
+	14485 7320 14485 7360
+Wire Wire Line
+	14485 7320 15150 7320
+Wire Wire Line
+	15150 7320 15150 6680
+Wire Wire Line
+	15150 6480 14985 6480
+Wire Wire Line
+	13985 6580 13855 6580
+Connection ~ 13855 6580
+Wire Wire Line
+	13855 6580 13855 6680
+Wire Wire Line
+	13985 6680 13855 6680
+Connection ~ 13855 6680
+Wire Wire Line
+	13855 6680 13855 7320
+Wire Wire Line
+	14985 6580 15150 6580
+Connection ~ 15150 6580
+Wire Wire Line
+	15150 6580 15150 6480
+Wire Wire Line
+	14985 6680 15150 6680
 Wire Bus Line
 	9365 5800 9365 6655
 Wire Bus Line
 	7120 2320 7120 2720
 Wire Bus Line
-	9605 1920 9605 2620
+	15490 5880 15490 6280
 Wire Bus Line
-	14845 5890 14845 6590
+	9605 1920 9605 2620
 Wire Bus Line
 	1685 2500 1685 3200
 Wire Bus Line
 	7165 5800 7165 6755
 Wire Bus Line
 	4380 1700 4380 3200
+Connection ~ 15150 6680
+Wire Wire Line
+	15150 6680 15150 6580
+Text Notes 12075 7210 0    50   ~ 0
+SERIES RESISTORS ADDED\nIN ORDER TO ALLOW SAFE\nWRITES TO THE PORT\n
 $EndSCHEMATC
