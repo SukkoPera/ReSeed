@@ -18,17 +18,19 @@
 
 /* These equations can be turned into a JED file through the WinCUPL software.
  * Too bad it's Windows-only and full of bugs...
+ *
+ * WARNING: This file will only work with V2 of the ReSeed board!
  */
 
 Name ReSeed;
 Partno TBD;
-Date 10/02/2022;
-Revision 01;
+Date 30/08/2022;
+Revision 02;
 Designer SukkoPera + Solder/Synergy;
 Company OpenRetroWorks;
 Assembly None;
 Location Italy;
-Device g16v8;
+Device g16v8as;		// Simple Mode
 
 /** Inputs **/
 Pin 1 = a15;
@@ -39,18 +41,20 @@ Pin 5 = a9;
 Pin 6 = a8;
 Pin 7 = a7;
 Pin 8 = a6;
-Pin 9 = a5;
-Pin 11 = a4;
-Pin 17 = phi2;
+Pin 9 = a4;
+Pin 12 = a5;
+Pin 13 = phi2;
+Pin 17 = reset_active_lo;
 Pin 18 = a12;
 Pin 19 = a14;
 
 /** Outputs **/
-/* Pin 12 = UNUSED (no feedback path) */
-/* Pin 13 = UNUSED */
-Pin 14 = !port;	// Joystick Port Enable (Active-low)
-Pin 15 = !sid;		// SID Enable (Active-low)
-/* Pin 16 = UNUSED */
+Pin 15 = sid;				// SID Enable (Active-low)
+Pin 14 = port;				// Joystick Port Enable (Active-low)
+Pin 16 = reset_active_hi;
+
+/** Unused Pins **/
+// Pin 11 =
 
 /** Declarations and Intermediate Variable Definitions **/
 Field addr = [a15..4];
@@ -58,14 +62,13 @@ Field addr = [a15..4];
 /** Logic Equations **/
 
 /* SID Chip Select */
-TABLE addr => sid_range {
-	'b'11111101010xxxxx => 'b'1;	// $FD40-FD5F (Germany)
-	'b'11111110100xxxxx => 'b'1;	// $FE80-FE9F (Hungary)
-}
-sid = sid_range & phi2;
+de_range = addr:[FD40..FD5F];
+hu_range = addr:[FE80..FE9F];
+sid = !(phi2 & (de_range # hu_range));		// Addresses are valid on Phi2 rising edge
 
 /* Joystick port Chip Select (Always FD80-FD8F) */
-TABLE addr => port_addr {
-	'b'111111011000xxxx => 'b'1;
-}
-port = port_addr & phi2;
+joy_range = addr:[FD80..FD8F];
+port = !(phi2 & joy_range);
+
+/* Active-low Reset to Active-high Reset (for 4520) */
+reset_active_hi = !reset_active_lo;
