@@ -44,7 +44,7 @@ Also note that CN3 shorts AUDIO_IN to GND in order to avoid noise, when no input
 
 ### Integrated Circuits
 You should be careful when choosing some of the ICs to be installed on the card:
-* U2 is a binary counter IC, **it MUST be of the "simple CMOS" type**, NOT a high-speed variant, i.e.: a [CD4520B](https://www.ti.com/product/CD4520B) is fine, a [CD74HCT4520](https://www.ti.com/product/CD74HCT4520) is NOT, for instance. If you can, look at the pictures of the SIDcards originally manufactured by Solder and try to get one of those exact chips.
+* U2 is a binary counter IC, **it MUST be of the "simple CMOS" type**, NOT a high-speed variant, i.e.: a [CD4520B](https://www.ti.com/product/CD4520B) is fine, a [CD74HCT4520](https://www.ti.com/product/CD74HCT4520) is NOT, for instance. If you can, look at the [pictures of the SIDcards originally manufactured by Solder](doc/) and try to get one of those exact chips.
 * U4 is a GAL that is used to generate the SID *Chip Select* signal: this one should be as fast as possible (10-15 ns). I have used an [ATF16V8B-15PU](https://www.microchip.com/en-us/product/ATF16V8B) with good results. Be careful with second-hand pulls from China: they generally work but they are very often relabeled parts, so you might have a -15 chip that is actually a -25...
 
 The above requirements are dictated by the simplistic design of the card, please see [this forum thread](https://plus4world.powweb.com/forum/45294) for more information.
