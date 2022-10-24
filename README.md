@@ -52,6 +52,11 @@ The above requirements are dictated by the simplistic design of the card, please
 ### SID Replacements
 Most SID replacements will not work correctly. This is because for technical reasons the clock that is provided to the SID has a lower frequency than what it gets on the C64 (~886 vs ~985 Hz). Most SID replacements do not use this clock signal at all and just assume C64 frequency (I guess), leading to incorrect data transfers. This is the case for the SwinSID firmware, for instance.
 
+## Software
+You can get images of the disks Solder used to ship with his SIDcard [here](https://plus4world.powweb.com/software/Synergy_Sidcard_Software). These will help making sure that the card works as intended.
+
+[Here is also a list](https://plus4world.powweb.com/effects/SID_Support) of a lot of C16/+4 software supporting the card.
+
 ## License
 The ReSeed documentation, including the design itself, is copyright &copy; SukkoPera 2022 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
