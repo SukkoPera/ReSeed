@@ -58,7 +58,7 @@ You can get images of the disks Solder used to ship with his SIDcard [here](http
 [Here is also a list](https://plus4world.powweb.com/effects/SID_Support) of a lot of C16/+4 games and software supporting the card.
 
 
-### Releases
+## Releases
 If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/ReSeed/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
 
 Every release is accompanied by its Bill Of Materials (BOM) file and any relevant notes about it, which you are recommended to read carefully.
