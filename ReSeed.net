@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Sat 12 Nov 2022 20:46:22 CET")
+    (date "Sat 12 Nov 2022 23:37:20 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -43,7 +43,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 62081408))
     (comp (ref R8)
-      (value "1 1%/0.5W")
+      (value "4.7 1%/0.5W")
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
       (fields
@@ -88,7 +88,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 620A853F))
     (comp (ref C16)
-      (value 3300u/25V)
+      (value 1000u/25V)
       (footprint Capacitor_THT:CP_Radial_D10.0mm_P5.00mm)
       (datasheet ~)
       (fields
