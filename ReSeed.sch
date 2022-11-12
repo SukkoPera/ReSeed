@@ -804,7 +804,7 @@ F 1 "10k" H 13350 1860 50  0000 R CNN
 F 2 "ReSeed:Pot_Bourns_3306P" H 13420 1905 50  0001 C CNN
 F 3 "~" H 13420 1905 50  0001 C CNN
 	1    13420 1905
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text Notes 13490 2030 0    50   ~ 0
 VOLUME
@@ -990,7 +990,7 @@ F 1 "1M" V 11689 3450 50  0000 C CNN
 F 2 "ReSeed:Pot_Bourns_3306P" H 11805 3450 50  0001 C CNN
 F 3 "~" H 11805 3450 50  0001 C CNN
 	1    11805 3450
-	0    -1   1    0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R6
@@ -1007,12 +1007,12 @@ $Comp
 L Connector:Conn_01x03_Male SW1
 U 1 1 6436DD9D
 P 11295 3350
-F 0 "SW1" H 11403 3631 50  0000 C CNN
-F 1 "SW_DIGIFIX" H 11403 3540 50  0000 C CNN
+F 0 "SW1" H 11268 3282 50  0000 R CNN
+F 1 "SW_DIGIFIX" H 11268 3373 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 11295 3350 50  0001 C CNN
 F 3 "~" H 11295 3350 50  0001 C CNN
 	1    11295 3350
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 NoConn ~ 11495 3250
 NoConn ~ 11955 3450
@@ -2441,6 +2441,9 @@ Wire Wire Line
 	5850 3250 5850 3595
 Wire Wire Line
 	6440 3250 6815 3250
+Connection ~ 6815 3250
+Wire Wire Line
+	6815 3250 6815 3595
 Wire Bus Line
 	8650 5890 8650 6745
 Wire Bus Line
@@ -2455,7 +2458,4 @@ Wire Bus Line
 	4380 1700 4380 3200
 Wire Bus Line
 	6450 5890 6450 6845
-Connection ~ 6815 3250
-Wire Wire Line
-	6815 3250 6815 3595
 $EndSCHEMATC
