@@ -1,14 +1,14 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Sat 12 Nov 2022 23:37:20 CET")
+    (date "Sun 13 Nov 2022 09:49:53 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title ReSeed)
         (company SukkoPera/Kinmami)
         (rev 2git)
-        (date 2022-11-12)
+        (date 2022-11-13)
         (source ReSeed.sch)
         (comment (number 1) (value "Replica of Christian Schäffner (Solder)'s SID Card for the Commodore 16/+4"))
         (comment (number 2) (value http://solder-synergy.de/plus4/hardware/index.html))
@@ -218,6 +218,8 @@
       (value BC549C)
       (footprint Package_TO_SOT_THT:TO-92_HandSolder)
       (datasheet https://www.onsemi.com/pub/Collateral/BC550-D.pdf)
+      (fields
+        (field (name MouserPN) 512-BC549CTA))
       (libsource (lib Transistor_BJT) (part BC549) (description "0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"))
       (sheetpath (names /) (tstamps /))
       (tstamp 6305E4B6))
@@ -225,6 +227,8 @@
       (value 470p)
       (footprint Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 810-FG28C0G1H471JNT6))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
       (tstamp 63071B14))
@@ -239,6 +243,8 @@
       (value 10k)
       (footprint ReSeed:Pot_Bourns_3306P)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 652-3306P-1-103))
       (libsource (lib Device) (part R_POT) (description Potentiometer))
       (sheetpath (names /) (tstamps /))
       (tstamp 6310F5D4))
@@ -255,6 +261,8 @@
       (value 100k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-100K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 633EFCCD))
@@ -262,6 +270,8 @@
       (value AUDIO_IN)
       (footprint ReSeed:AudioJack_SJ1-3525N)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 490-SJ1-3525N))
       (libsource (lib Connector) (part AudioJack3_SwitchTR) (description "Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 6393D5DC))
@@ -286,12 +296,16 @@
     (comp (ref V0)
       (value LOGO)
       (footprint ReSeed:Logo)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib void) (part Void) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 64138BAD))
     (comp (ref V1)
       (value LICENSE)
       (footprint ReSeed:cc_by_nc_sa)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib void) (part Void) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 64138E7F))
@@ -299,6 +313,8 @@
       (value AUDIO_OUT)
       (footprint ReSeed:AudioJack_SJ1-3525N)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 490-SJ1-3525N))
       (libsource (lib Connector) (part AudioJack3_SwitchTR) (description "Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 637FDCD2))
@@ -313,6 +329,8 @@
       (value 100n)
       (footprint Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 810-FG28X7R1H104KNT0))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
       (tstamp 642BE109))
@@ -320,6 +338,8 @@
       (value 1M)
       (footprint ReSeed:Pot_Bourns_3306P)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 652-3306P-1-105))
       (libsource (lib Device) (part R_POT) (description Potentiometer))
       (sheetpath (names /) (tstamps /))
       (tstamp 64350FB5))
@@ -327,6 +347,8 @@
       (value 180k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MF0207FTE52-180K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 6340C3F1))
@@ -359,6 +381,8 @@
       (value JMP_GND_LIFT)
       (footprint Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Device) (part Jumper_NC_Small) (description "Jumper, normally closed, small symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 623495F8))
@@ -373,6 +397,8 @@
       (value 470p)
       (footprint Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 810-FG28C0G1H471JNT6))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
       (tstamp 631442E0))
@@ -380,6 +406,8 @@
       (value 100)
       (footprint Resistor_THT:R_Array_SIP10)
       (datasheet http://www.vishay.com/docs/31509/csc.pdf)
+      (fields
+        (field (name MouserPN) "RoHS2\n652-4609X-1LF-4.7K"))
       (libsource (lib Device) (part R_Pack05_SIP_Split) (description "5 resistor network, parallel topology, SIP package, split"))
       (sheetpath (names /) (tstamps /))
       (tstamp 63A2AA82))
@@ -427,6 +455,8 @@
       (value JMP_CNT_RST)
       (footprint Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Jumper) (part Jumper_3_Open) (description "Jumper, 3-pole, both open"))
       (sheetpath (names /) (tstamps /))
       (tstamp 6370352A))
@@ -468,6 +498,8 @@
       (value JMP_REG_BYPASS)
       (footprint Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Device) (part Jumper_NC_Small) (description "Jumper, normally closed, small symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 64133E86)))
