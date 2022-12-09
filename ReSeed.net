@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Fri 09 Dec 2022 01:04:34 CET")
+    (date "Fri 09 Dec 2022 01:12:46 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -52,7 +52,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 62099265))
     (comp (ref C15)
-      (value 130p)
+      (value 100p)
       (footprint Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm)
       (datasheet ~)
       (fields
