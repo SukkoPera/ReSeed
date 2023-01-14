@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "ReSeed"
-Date "2022-12-09"
+Date "2023-01-14"
 Rev "2git"
 Comp "SukkoPera/Kinmami"
 Comment1 "Replica of Christian Schäffner (Solder)'s SID Card for the Commodore 16/+4"
@@ -122,7 +122,7 @@ L Device:R R8
 U 1 1 62099265
 P 6175 9335
 F 0 "R8" H 6245 9381 50  0000 L CNN
-F 1 "4.7 1%/0.5W" H 6245 9290 50  0000 L CNN
+F 1 "3.3 1%/0.5W" H 6245 9290 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6105 9335 50  0001 C CNN
 F 3 "~" H 6175 9335 50  0001 C CNN
 F 4 "603-MFR50SFTE52-4R7" H 6175 9335 50  0001 C CNN "MouserPN"

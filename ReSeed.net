@@ -1,14 +1,14 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Fri 09 Dec 2022 01:12:46 CET")
+    (date "Sat 14 Jan 2023 23:25:53 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title ReSeed)
         (company SukkoPera/Kinmami)
         (rev 2git)
-        (date 2022-12-09)
+        (date 2023-01-14)
         (source ReSeed.sch)
         (comment (number 1) (value "Replica of Christian Schäffner (Solder)'s SID Card for the Commodore 16/+4"))
         (comment (number 2) (value http://solder-synergy.de/plus4/hardware/index.html))
@@ -43,7 +43,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 62081408))
     (comp (ref R8)
-      (value "4.7 1%/0.5W")
+      (value "3.3 1%/0.5W")
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
       (fields
@@ -419,7 +419,7 @@
       (footprint Resistor_THT:R_Array_SIP10)
       (datasheet http://www.vishay.com/docs/31509/csc.pdf)
       (fields
-        (field (name MouserPN) 652-4606X-1LF-100))
+        (field (name MouserPN) 652-4610X-2LF-100))
       (libsource (lib Device) (part R_Pack05_SIP_Split) (description "5 resistor network, parallel topology, SIP package, split"))
       (sheetpath (names /) (tstamps /))
       (tstamp 63A2AA82))
@@ -428,7 +428,7 @@
       (footprint Resistor_THT:R_Array_SIP6)
       (datasheet http://www.vishay.com/docs/31509/csc.pdf)
       (fields
-        (field (name MouserPN) 652-4609X-1LF-4.7K))
+        (field (name MouserPN) 652-4606X-1LF-4.7K))
       (libsource (lib Device) (part R_Network05) (description "5 resistor network, star topology, bussed resistors, small symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 638C9A62))
