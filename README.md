@@ -50,7 +50,7 @@ You should be careful when choosing some of the ICs to be installed on the card:
 The above requirements are dictated by the simplistic design of the card, please see [this forum thread](https://plus4world.powweb.com/forum/45294) for more information.
 
 ### SID Replacements
-Most SID replacements will not work correctly. This is because for technical reasons the clock that is provided to the SID has a lower frequency than what it gets on the C64 (~886 vs ~985 Hz). Most SID replacements do not use this clock signal at all and just assume C64 frequency (I guess), leading to incorrect data transfers. This is the case for the SwinSID firmware, for instance.
+Most SID replacements will not work correctly. This is because for technical reasons the clock that is provided to the SID has a lower frequency than what it gets on the C64 (~886 vs ~985 kHz). Most SID replacements do not use this clock signal at all and just assume C64 frequency (I guess), leading to incorrect data transfers. This is the case for the SwinSID firmware, for instance.
 
 ## Games & Software
 You can get images of the disks Solder used to ship with his SIDcard [here](https://plus4world.powweb.com/software/Synergy_Sidcard_Software). These will help making sure that the card works as intended.
