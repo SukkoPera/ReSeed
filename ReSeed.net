@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Sun 15 Jan 2023 20:08:41 CET")
+    (date "Sun 15 Jan 2023 22:19:26 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -29,7 +29,7 @@
       (footprint Package_DIP:DIP-16_W7.62mm_Socket_LongPads)
       (datasheet http://www.intersil.com/content/dam/Intersil/documents/cd45/cd4518bms-20bms.pdf)
       (fields
-        (field (name MouserPN) 595-CD74HCT4520E))
+        (field (name MouserPN) 595-CD4520BE))
       (libsource (lib 4xxx) (part 4520) (description "Dual Binary Up-Counter"))
       (sheetpath (names /) (tstamps /))
       (tstamp 6207DEAD))
@@ -37,7 +37,7 @@
       (value GAL16V8)
       (footprint Package_DIP:DIP-20_W7.62mm_Socket_LongPads)
       (fields
-        (field (name MouserPN) " 556-AF16V8B15PU"))
+        (field (name MouserPN) 556-AF16V8B15PU))
       (libsource (lib Logic_Programmable) (part GAL16V8) (description "Programmable Logic Array, DIP-20/SOIC-20/PLCC-20"))
       (sheetpath (names /) (tstamps /))
       (tstamp 620806D2))
@@ -46,7 +46,7 @@
       (footprint Package_DIP:DIP-14_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/ds/symlink/tl497a.pdf)
       (fields
-        (field (name MouserPN) " 595-TL497ACNE4 "))
+        (field (name MouserPN) "595-TL497ACNE4 "))
       (libsource (lib Regulator_Switching) (part TL497A) (description "500mA step up/step down switching regulator"))
       (sheetpath (names /) (tstamps /))
       (tstamp 62081408))
@@ -55,7 +55,7 @@
       (footprint Package_DIP:DIP-20_W7.62mm_Socket_LongPads)
       (datasheet http://www.ti.com/lit/gpn/sn74LS245)
       (fields
-        (field (name MouserPN) " 595-SN74HCT245N"))
+        (field (name MouserPN) 595-SN74HCT245N))
       (libsource (lib 74xx) (part 74LS245) (description "Octal BUS Transceivers, 3-State outputs"))
       (sheetpath (names /) (tstamps /))
       (tstamp 62081D66))
@@ -64,7 +64,7 @@
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 603-MF0207FRE52-1R))
+        (field (name MouserPN) 603-MFR50SFTE52-3R3))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 62099265))
@@ -171,6 +171,8 @@
       (value 100)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 660-MF1/4LCT52R101G))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 6224D360))
@@ -178,6 +180,8 @@
       (value 100)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 660-MF1/4LCT52R101G))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 6224C319))
@@ -237,6 +241,8 @@
       (value 10k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FTF52-10K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 63010374))
@@ -253,6 +259,8 @@
       (value BC547C)
       (footprint Package_TO_SOT_THT:TO-92_HandSolder)
       (datasheet https://www.onsemi.com/pub/Collateral/BC550-D.pdf)
+      (fields
+        (field (name MouserPN) 512-BC549CTA))
       (libsource (lib Transistor_BJT) (part BC549) (description "0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"))
       (sheetpath (names /) (tstamps /))
       (tstamp 6305E4B6))
@@ -260,6 +268,8 @@
       (value 470p)
       (footprint Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 810-FG28C0G1H471JNT6))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
       (tstamp 63071B14))
@@ -267,6 +277,8 @@
       (value 1k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-1K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 630725DE))
@@ -274,6 +286,8 @@
       (value 10k)
       (footprint ReSeed:Pot_Bourns_3306P)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 652-3306P-1-103))
       (libsource (lib Device) (part R_POT) (description Potentiometer))
       (sheetpath (names /) (tstamps /))
       (tstamp 6310F5D4))
@@ -290,6 +304,8 @@
       (value 100k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-100K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 633EFCCD))
@@ -297,6 +313,8 @@
       (value AUDIO_IN)
       (footprint ReSeed:AudioJack_SJ1-3525N)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 490-SJ1-3525N))
       (libsource (lib Connector) (part AudioJack3_SwitchTR) (description "Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 6393D5DC))
@@ -321,12 +339,16 @@
     (comp (ref V0)
       (value LOGO)
       (footprint ReSeed:Logo)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib void) (part Void) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 64138BAD))
     (comp (ref V1)
       (value LICENSE)
       (footprint ReSeed:cc_by_nc_sa)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib void) (part Void) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 64138E7F))
@@ -334,6 +356,8 @@
       (value AUDIO_OUT)
       (footprint ReSeed:AudioJack_SJ1-3525N)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 490-SJ1-3525N))
       (libsource (lib Connector) (part AudioJack3_SwitchTR) (description "Audio Jack, 3 Poles (Stereo / TRS), Switched TR Poles (Normalling)"))
       (sheetpath (names /) (tstamps /))
       (tstamp 637FDCD2))
@@ -341,6 +365,8 @@
       (value 1k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MFR-25FBF52-1K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 64257402))
@@ -348,6 +374,8 @@
       (value 100n)
       (footprint Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 810-FG28X7R1H104KNT0))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
       (tstamp 642BE109))
@@ -355,6 +383,8 @@
       (value 1M)
       (footprint ReSeed:Pot_Bourns_3306P)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 652-3306P-1-105))
       (libsource (lib Device) (part R_POT) (description Potentiometer))
       (sheetpath (names /) (tstamps /))
       (tstamp 64350FB5))
@@ -362,6 +392,8 @@
       (value 180k)
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) 603-MF0207FTE52-180K))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
       (tstamp 6340C3F1))
@@ -394,6 +426,8 @@
       (value JMP_GND_LIFT)
       (footprint Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm)
       (datasheet ~)
+      (fields
+        (field (name MouserPN) ---))
       (libsource (lib Device) (part Jumper_NC_Small) (description "Jumper, normally closed, small symbol"))
       (sheetpath (names /) (tstamps /))
       (tstamp 623495F8)))
