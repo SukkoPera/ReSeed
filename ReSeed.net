@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Sun 15 Jan 2023 19:24:26 CET")
+    (date "Sun 15 Jan 2023 22:06:51 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -225,7 +225,8 @@
       (footprint Package_TO_SOT_THT:TO-92_HandSolder)
       (datasheet https://www.onsemi.com/pub/Collateral/BC550-D.pdf)
       (fields
-        (field (name MouserPN) 512-BC549CTA))
+        (field (name MouserPN) 512-BC549CTA)
+        (field (name Notes) "Either mount this or Q101"))
       (libsource (lib Transistor_BJT) (part BC549) (description "0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"))
       (sheetpath (names /) (tstamps /))
       (tstamp 6305E4B6))
@@ -514,6 +515,9 @@
       (value 2SC1815)
       (footprint Package_TO_SOT_THT:TO-92_HandSolder)
       (datasheet https://media.digikey.com/pdf/Data%20Sheets/Toshiba%20PDFs/2SC1815.pdf)
+      (fields
+        (field (name MouserPN) 610-2SC1815-GR)
+        (field (name Notes) "Either mount this or Q1"))
       (libsource (lib Transistor_BJT) (part 2SC1815) (description "0.15A Ic, 50V Vce, Low Noise Audio NPN Transistor, TO-92"))
       (sheetpath (names /) (tstamps /))
       (tstamp 63BEC2B2))
