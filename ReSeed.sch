@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "ReSeed"
-Date "2022-10-24"
-Rev "1git"
+Date "2023-01-15"
+Rev "1.1"
 Comp "SukkoPera/Kinmami"
 Comment1 "Replica of Christian Schäffner (Solder)'s SID Card for the Commodore 16/+4"
 Comment2 "http://solder-synergy.de/plus4/hardware/index.html"
@@ -241,7 +241,7 @@ L Device:R R8
 U 1 1 62099265
 P 6930 9165
 F 0 "R8" H 7000 9211 50  0000 L CNN
-F 1 "1 1%/0.5W" H 7000 9120 50  0000 L CNN
+F 1 "3.3 1%/0.5W" H 7000 9120 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6860 9165 50  0001 C CNN
 F 3 "~" H 6930 9165 50  0001 C CNN
 F 4 "603-MF0207FRE52-1R" H 6930 9165 50  0001 C CNN "MouserPN"
@@ -275,7 +275,7 @@ L Device:C C15
 U 1 1 6209EC07
 P 7265 9815
 F 0 "C15" H 7380 9861 50  0000 L CNN
-F 1 "47p" H 7380 9770 50  0000 L CNN
+F 1 "100p" H 7380 9770 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 7303 9665 50  0001 C CNN
 F 3 "~" H 7265 9815 50  0001 C CNN
 F 4 "810-FG28C0G1H470JNT0" H 7265 9815 50  0001 C CNN "MouserPN"
@@ -296,7 +296,7 @@ L Device:L L1
 U 1 1 620A22EF
 P 6585 9170
 F 0 "L1" H 6637 9216 50  0000 L CNN
-F 1 "330u" H 6637 9125 50  0000 L CNN
+F 1 "100u" H 6637 9125 50  0000 L CNN
 F 2 "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP" H 6585 9170 50  0001 C CNN
 F 3 "~" H 6585 9170 50  0001 C CNN
 F 4 " 652-RLB0914-331KL" H 6585 9170 50  0001 C CNN "MouserPN"

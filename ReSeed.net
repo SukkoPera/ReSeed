@@ -1,14 +1,14 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Mon 24 Oct 2022 10:35:44 CEST")
+    (date "Sun 15 Jan 2023 20:08:41 CET")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title ReSeed)
         (company SukkoPera/Kinmami)
-        (rev 1git)
-        (date 2022-10-24)
+        (rev 1.1)
+        (date 2023-01-15)
         (source ReSeed.sch)
         (comment (number 1) (value "Replica of Christian Schäffner (Solder)'s SID Card for the Commodore 16/+4"))
         (comment (number 2) (value http://solder-synergy.de/plus4/hardware/index.html))
@@ -60,7 +60,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 62081D66))
     (comp (ref R8)
-      (value "1 1%/0.5W")
+      (value "3.3 1%/0.5W")
       (footprint Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal)
       (datasheet ~)
       (fields
@@ -69,7 +69,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 62099265))
     (comp (ref C15)
-      (value 47p)
+      (value 100p)
       (footprint Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm)
       (datasheet ~)
       (fields
@@ -78,7 +78,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 6209EC07))
     (comp (ref L1)
-      (value 330u)
+      (value 100u)
       (footprint Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP)
       (datasheet ~)
       (fields
