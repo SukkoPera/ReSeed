@@ -1,4 +1,3 @@
-
 # ReSeed
 ReSeed is an expansion card for the Commodore 16 and Plus/4 computers that allows interfacing the computer with a [MOS 6581 or 8580 Sound Interface Device](https://en.wikipedia.org/wiki/MOS_Technology_6581), the chip that is used to deliver audio on the Commodore 64.
 
@@ -12,14 +11,27 @@ Sounds from the C64 now for the Plus/4! Just plug the card into the Expansion Po
 *(Slight rewording of Solder's original description of the card.)*
 
 ## Design
-ReSeed is derived from Solder's SIDcard, with a few enhancements:
-- Supports both MOS 6581 and 8580 SIDs: this depends on mounting different components though, the board **cannot** be switched "on-the-fly", see [below](#Assembly).
-- A volume control for the DigiFix was added and even a switch to completely bypass it.
-- The output switch was removed: audio is automatically redirected to the Plus/4's EXT_AUDIO when nothing is connected to the output jack.
-- The second stage of the amplifier was removed and the first stage modified so that it uses the same circuit and component values as the C64: the original card was known to introduce some distortion to the output signal as it was trying to amplify it, these days you can easily do better amplification outboard, so we chose to preserve sound fidelity.
-- A decoupling capacitor was added close to every IC.
-- The values for the step-up converter were recalculated in order to make the generated voltage less noisy and as ripple-free as possible.
-- Last but not least, the design was documented and made open.
+ReSeed is derived from Solder's SIDcard, with a few enhancements.
+
+### Modifications Introduced in V2
+The focus for V2 was on reducing the output noise.
+
+* New component values for the step-up voltage regulator: The values of some components were fine-tuned (again) in order to place the switching frequency of the step-up voltage converter way out of the audio band. These new values can also be retrofitted on a V1 board and will improve things dramatically (See [V1.1](https://github.com/SukkoPera/ReSeed/releases/tag/v1.1)).
+* Alternative voltage step-up module: Cheap step-up voltage boost modules can now be used instead of the TL497-based circuit. Such modules, which can be easily sourced from Chinese portals, are much more modern than the TL497 and use a higher switching frequency, resulting in (near-)zero switching-induced noise. Using them also results in faster assembly time, as many components can be skipped.
+* Linear Regulator: If you are really paranoid about switching-induced noise, you can use the above alternatives as a first-stage voltage regulator and then make a second stage through a linear regulator, which should "eat" any remaining noise and provide the SID with very stable power.
+* Separate grounds: A separate audio ground plane was introduced and connected to the signal ground plane through a single ferrite bead, preventing noise from spreading from the latter to the former. A second ferrite bead was inserted on the incoming +5V power rail in order to make it cleaner.
+* Alternative BJT footprint: An alternative footprint for the output amplifier transistor was added, allowing for the mounting of the 2SC1815 BJT used in the original C64 audio circuit.
+* SID clock delay circuit: This allows use of CD74HCT4520B chips in place of the CD4520B.
+* Short-circuit protection for the joystick port: In the original Solder design, a short-circuit can happen on the joystick port if it is written to. Series resistors were added in order to avoid this situation.
+
+### Modifications Introduced in [V1](https://github.com/SukkoPera/ReSeed/releases/tag/v1)
+* Supports both MOS 6581 and 8580 SIDs: this depends on mounting different components though, the board **cannot** be switched "on-the-fly", see [below](#Assembly).
+* A volume control for the DigiFix was added and even a switch to completely bypass it.
+* The output switch was removed: audio is automatically redirected to the Plus/4's EXT_AUDIO when nothing is connected to the output jack.
+* The second stage of the amplifier was removed and the first stage modified so that it uses the same circuit and component values as the C64: the original card was known to introduce some distortion to the output signal as it was trying to amplify it, these days you can easily do better amplification outboard, so we chose to preserve sound fidelity.
+* A decoupling capacitor was added close to every IC.
+* The values for the step-up converter were recalculated in order to make the generated voltage less noisy and as ripple-free as possible.
+* Last but not least, the design was documented and made open.
 
 ## Assembly
 The values of some components depend upon the SID model.
