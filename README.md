@@ -17,12 +17,13 @@ ReSeed is derived from Solder's SIDcard, with a few enhancements.
 The focus for V2 was on reducing the output noise.
 
 * New component values for the step-up voltage regulator: The values of some components were fine-tuned (again) in order to place the switching frequency of the step-up voltage converter way out of the audio band. These new values can also be retrofitted on a V1 board and will improve things dramatically (See [V1.1](https://github.com/SukkoPera/ReSeed/releases/tag/v1.1)).
-* Alternative voltage step-up module: Cheap step-up voltage boost modules can now be used instead of the TL497-based circuit. Such modules, which can be easily sourced from Chinese portals, are much more modern than the TL497 and use a higher switching frequency, resulting in (near-)zero switching-induced noise. Using them also results in faster assembly time, as many components can be skipped.
+* Alternative voltage step-up module: Cheap step-up voltage boost modules can now be used instead of the TL497-based circuit. Such modules, which can be easily sourced from Chinese portals, are much more modern and use a higher switching frequency, resulting in (near-)zero switching-induced noise. Using them also speeds up the assembly process, as many components can be skipped.
 * Linear Regulator: If you are really paranoid about switching-induced noise, you can use the above alternatives as a first-stage voltage regulator and then make a second stage through a linear regulator, which should "eat" any remaining noise and provide the SID with very stable power.
 * Separate grounds: A separate audio ground plane was introduced and connected to the signal ground plane through a single ferrite bead, preventing noise from spreading from the latter to the former. A second ferrite bead was inserted on the incoming +5V power rail in order to make it cleaner.
 * Alternative BJT footprint: An alternative footprint for the output amplifier transistor was added, allowing for the mounting of the 2SC1815 BJT used in the original C64 audio circuit.
 * SID clock delay circuit: This allows use of CD74HCT4520B chips in place of the CD4520B.
-* Short-circuit protection for the joystick port: In the original Solder design, a short-circuit can happen on the joystick port if it is written to. Series resistors were added in order to avoid this situation.
+* Clock divider reset: Makes sure the SID clock always has the correct phase upon startup/reset.
+* Short-circuit protection: In the original Solder design, a short-circuit can happen on the joystick port if it is written to. Series resistors were added in order to avoid this situation.
 
 ### Modifications Introduced in [V1](https://github.com/SukkoPera/ReSeed/releases/tag/v1)
 * Supports both MOS 6581 and 8580 SIDs: this depends on mounting different components though, the board **cannot** be switched "on-the-fly", see [below](#Assembly).
