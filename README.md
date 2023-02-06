@@ -35,16 +35,18 @@ The focus for V2 was on reducing the output noise.
 * Last but not least, the design was documented and made open.
 
 ## Assembly
-The values of some components depend upon the SID model.
+The provided BOM is suitable for the 8580 SID, but the board can also be used with a 6581 by changing the values of a few components.
 
 ### MOS 6581
 * C1/C2 = 470pF
+* C3/C4 = 1.8nF
 * R3 = 1k
 * R9 = 11k 1%: **CAREFUL!**
 * SW1/RV2/R6 = Do not mount
 
 ### MOS 8580
 * C1/C2 = 22nF
+* C3/C4 = 2.2nF
 * R3 = Do not mount
 * R6 = 180k
 * R9 = 7.87k 1%: **CAREFUL!**
