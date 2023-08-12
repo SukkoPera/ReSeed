@@ -35,34 +35,7 @@ The focus for V2 was on reducing the output noise.
 * Last but not least, the design was documented and made open.
 
 ## Assembly
-The provided BOM is suitable for the 8580 SID, but the board can also be used with a 6581 by changing the values of a few components.
-
-### MOS 6581
-* C1/C2 = 470pF
-* C3/C4 = 1.8nF
-* R3 = 1k
-* R9 = 11k 1%: **CAREFUL!**
-* SW1/RV2/R6 = Do not mount
-
-### MOS 8580
-* C1/C2 = 22nF
-* C3/C4 = 2.2nF
-* R3 = Do not mount
-* R6 = 180k
-* R9 = 7.87k 1%: **CAREFUL!**
-* SW1 = Mount normally
-* RV2 = 1M
-
-**Be VERY CAREFUL with R9**: it is this component that decides whether the auxiliary supply voltage of the SID will be 9V or 12V. The 6581 requires 12V, but **if you provide an 8580 with that you are likely to destroy it**. In fact, the 8580 requires 9V, if you provide a 6581 with that it will probably output distorted sound or no sound at all, but SHOULDN'T get damaged. In any case, **I recommend measuring the voltage between pins 14 and 28 of the SID socket** before you actually plug your precious SID into the board. **Consider yourself warned**.
-
-Also note that CN3 shorts AUDIO_IN to GND in order to avoid noise, when no input jack is inserted. If you don't like that, cut JP1 open. I guess this is a good idea (= do it!) if you are using a DigiBlaster add-on.
-
-### Integrated Circuits
-You should be careful when choosing some of the ICs to be installed on the card:
-* U2 is a binary counter IC, **it MUST be of the "simple CMOS" type**, NOT a high-speed variant, i.e.: a [CD4520B](https://www.ti.com/product/CD4520B) is fine, a [CD74HCT4520](https://www.ti.com/product/CD74HCT4520) is NOT, for instance. If you can, look at the [pictures of the SIDcards originally manufactured by Solder](doc/) and try to get one of those exact chips.
-* U4 is a GAL that is used to generate the SID *Chip Select* signal: this one should be as fast as possible (10-15 ns). I have used an [ATF16V8B-15PU](https://www.microchip.com/en-us/product/ATF16V8B) with good results. Be careful with second-hand pulls from China: they generally work but they are very often relabeled parts, so you might have a -15 chip that is actually a -25...
-
-The above requirements are dictated by the simplistic design of the card, please see [this forum thread](https://plus4world.powweb.com/forum/45294) for more information.
+If you want to assemble a card, **please read the assembly notes on [the Wiki](https://github.com/SukkoPera/ReSeed/wiki) carefully or you might destroy your SID chip!**
 
 ### SID Replacements
 Most SID replacements will not work correctly. This is because for technical reasons the clock that is provided to the SID has a lower frequency than what it gets on the C64 (~886 vs ~985 kHz). Most SID replacements do not use this clock signal at all and just assume C64 frequency (I guess), leading to incorrect data transfers. This is the case for the SwinSID firmware, for instance.
@@ -72,14 +45,13 @@ You can get images of the disks Solder used to ship with his SIDcard [here](http
 
 [Here is also a list](https://plus4world.powweb.com/effects/SID_Support) of a lot of C16/+4 games and software supporting the card.
 
-
 ## Releases
 If you want to get this board produced, you are recommended to get [the latest release](https://github.com/SukkoPera/ReSeed/releases) rather than the current git version, as the latter might be under development and is not guaranteed to be working.
 
 Every release is accompanied by its Bill Of Materials (BOM) file and any relevant notes about it, which you are recommended to read carefully.
 
 ## License
-The ReSeed documentation, including the design itself, is copyright &copy; SukkoPera 2022 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The ReSeed documentation, including the design itself, is copyright &copy; SukkoPera 2022-2023 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 This documentation is distributed *as is* and WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES whatsoever with respect to its functionality, operability or use, including, without limitation, any implied warranties OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE or infringement. We expressly disclaim any liability whatsoever for any direct, indirect, consequential, incidental or special damages, including, without limitation, lost revenues, lost profits, losses resulting from business interruption or loss of data, regardless of the form of action or legal theory under which the liability may be asserted, even if advised of the possibility or likelihood of such damages.
 

@@ -157,7 +157,7 @@ F 0 "C15" H 6290 10031 50  0000 L CNN
 F 1 "100p" H 6290 9940 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm" H 6213 9835 50  0001 C CNN
 F 3 "~" H 6175 9985 50  0001 C CNN
-F 4 "80-C327C131JAG5TA" H 6175 9985 50  0001 C CNN "MouserPN"
+F 4 "810-FG28C0G1H101JNT6" H 6175 9985 50  0001 C CNN "MouserPN"
 F 5 "100p" H 6175 9985 50  0001 C CNN "Value"
 	1    6175 9985
 	1    0    0    -1  
@@ -793,7 +793,7 @@ F 1 "BC549C" H 12920 1450 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_HandSolder" H 12930 1420 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/BC550-D.pdf" H 12730 1495 50  0001 L CNN
 F 4 "512-BC549CTA" H 12730 1495 50  0001 C CNN "MouserPN"
-F 5 "Either mount this or Q101" H 12730 1495 50  0001 C CNN "Notes"
+F 5 "Either mount this or Q101, BC547 and BC548 would work but BC549 is low-noise" H 12730 1495 50  0001 C CNN "Notes"
 F 6 "BC549C" H 12730 1495 50  0001 C CNN "Value"
 	1    12730 1495
 	1    0    0    -1  
@@ -1872,6 +1872,7 @@ F 2 "Resistor_THT:R_Array_SIP6" V 13165 5885 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 12790 5885 50  0001 C CNN
 F 4 "652-4606X-1LF-4.7K" H 12790 5885 50  0001 C CNN "MouserPN"
 F 5 "4.7k" H 12790 5885 50  0001 C CNN "Value"
+F 6 "Any value between 3.3-10K should be fine" H 12790 5885 50  0001 C CNN "Notes"
 	1    12790 5885
 	1    0    0    -1  
 $EndComp
@@ -2539,10 +2540,10 @@ L Device:R_Network03 RN3
 U 1 1 63D44EA1
 P 13485 5885
 F 0 "RN3" H 13673 5931 50  0000 L CNN
-F 1 "4.7k" H 13673 5840 50  0000 L CNN
+F 1 "10k" H 13673 5840 50  0000 L CNN
 F 2 "Resistor_THT:R_Array_SIP4" V 13760 5885 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 13485 5885 50  0001 C CNN
-F 4 "652-4604X-1LF-4.7K" H 13485 5885 50  0001 C CNN "MouserPN"
+F 4 "652-4604X-1LF-10K" H 13485 5885 50  0001 C CNN "MouserPN"
 F 5 "4.7k" H 13485 5885 50  0001 C CNN "Value"
 	1    13485 5885
 	1    0    0    -1  

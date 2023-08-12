@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "gio 9 feb 2023, 22:11:59")
+    (date "Sat 12 Aug 2023 19:25:49 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -61,7 +61,7 @@
       (footprint Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm)
       (datasheet ~)
       (fields
-        (field (name MouserPN) 80-C327C131JAG5TA)
+        (field (name MouserPN) 810-FG28C0G1H101JNT6)
         (field (name Value) 100p))
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /) (tstamps /))
@@ -245,7 +245,7 @@
       (datasheet https://www.onsemi.com/pub/Collateral/BC550-D.pdf)
       (fields
         (field (name MouserPN) 512-BC549CTA)
-        (field (name Notes) "Either mount this or Q101")
+        (field (name Notes) "Either mount this or Q101, BC547 and BC548 would work but BC549 is low-noise")
         (field (name Value) BC549C))
       (libsource (lib Transistor_BJT) (part BC549) (description "0.1A Ic, 30V Vce, Small Signal NPN Transistor, TO-92"))
       (sheetpath (names /) (tstamps /))
@@ -479,6 +479,7 @@
       (datasheet http://www.vishay.com/docs/31509/csc.pdf)
       (fields
         (field (name MouserPN) 652-4606X-1LF-4.7K)
+        (field (name Notes) "Any value between 3.3-10K should be fine")
         (field (name Value) 4.7k))
       (libsource (lib Device) (part R_Network05) (description "5 resistor network, star topology, bussed resistors, small symbol"))
       (sheetpath (names /) (tstamps /))
@@ -595,11 +596,11 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 62081D66))
     (comp (ref RN3)
-      (value 4.7k)
+      (value 10k)
       (footprint Resistor_THT:R_Array_SIP4)
       (datasheet http://www.vishay.com/docs/31509/csc.pdf)
       (fields
-        (field (name MouserPN) 652-4604X-1LF-4.7K)
+        (field (name MouserPN) 652-4604X-1LF-10K)
         (field (name Value) 4.7k))
       (libsource (lib Device) (part R_Network03) (description "3 resistor network, star topology, bussed resistors, small symbol"))
       (sheetpath (names /) (tstamps /))
