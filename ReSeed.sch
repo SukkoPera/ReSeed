@@ -5,7 +5,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "ReSeed"
-Date "2023-02-09"
+Date "2023-10-04"
 Rev "2git"
 Comp "SukkoPera/Kinmami"
 Comment1 "Replica of Christian Schäffner (Solder)'s SID Card for the Commodore 16/+4"
@@ -84,12 +84,12 @@ $EndComp
 $Comp
 L power:GND #PWR021
 U 1 1 62087AD2
-P 2250 3895
-F 0 "#PWR021" H 2250 3645 50  0001 C CNN
-F 1 "GND" H 2255 3722 50  0000 C CNN
-F 2 "" H 2250 3895 50  0001 C CNN
-F 3 "" H 2250 3895 50  0001 C CNN
-	1    2250 3895
+P 2250 3595
+F 0 "#PWR021" H 2250 3345 50  0001 C CNN
+F 1 "GND" H 2255 3422 50  0000 C CNN
+F 2 "" H 2250 3595 50  0001 C CNN
+F 3 "" H 2250 3595 50  0001 C CNN
+	1    2250 3595
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -519,37 +519,20 @@ $EndComp
 Text Notes 13405 5075 0    50   ~ 0
 ANALOG PADDLE/JOYSTICK PORT
 $Comp
-L C16-Exp-Port:C16-Exp-Port CN1
-U 1 1 62403A40
-P 3140 2500
-F 0 "CN1" H 3140 4065 50  0000 C CNN
-F 1 "EDGE_CONNECTOR" H 3140 3974 50  0000 C CNN
-F 2 "ReSeed:C16_Cart_Conn" H 3140 850 50  0001 C CNN
-F 3 "DOCUMENTATION" H 3140 750 50  0001 C CNN
-F 4 "---" H 3140 2500 50  0001 C CNN "MouserPN"
-F 5 "EDGE_CONNECTOR" H 3140 2500 50  0001 C CNN "Value"
-	1    3140 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR022
 U 1 1 62418CFF
-P 4030 3895
-F 0 "#PWR022" H 4030 3645 50  0001 C CNN
-F 1 "GND" H 4035 3722 50  0000 C CNN
-F 2 "" H 4030 3895 50  0001 C CNN
-F 3 "" H 4030 3895 50  0001 C CNN
-	1    4030 3895
+P 4030 3595
+F 0 "#PWR022" H 4030 3345 50  0001 C CNN
+F 1 "GND" H 4035 3422 50  0000 C CNN
+F 2 "" H 4030 3595 50  0001 C CNN
+F 3 "" H 4030 3595 50  0001 C CNN
+	1    4030 3595
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 2390 1800
 NoConn ~ 2390 1900
 NoConn ~ 2390 2000
-NoConn ~ 2390 2100
 NoConn ~ 2390 2200
 NoConn ~ 2390 2300
-NoConn ~ 2390 2500
-NoConn ~ 2390 3400
 NoConn ~ 3890 1400
 NoConn ~ 3890 1600
 NoConn ~ 3890 1700
@@ -592,7 +575,7 @@ a[0..15]
 NoConn ~ 2390 1600
 Text Label 1785 1700 0    50   ~ 0
 r_~w
-Text Label 1785 2400 0    50   ~ 0
+Text Label 1785 2500 0    50   ~ 0
 mux
 Entry Wire Line
 	1685 2500 1785 2600
@@ -660,7 +643,7 @@ Text Label 4280 3200 2    50   ~ 0
 a1
 Text Label 4280 3300 2    50   ~ 0
 a0
-Text Label 1785 3500 0    50   ~ 0
+Text Label 1785 2100 0    50   ~ 0
 ext_audio
 $Comp
 L power:GND #PWR037
@@ -851,7 +834,7 @@ F 3 "" H 12830 830 50  0001 C CNN
 	1    12830 830 
 	1    0    0    -1  
 $EndComp
-Text Label 1785 3600 0    50   ~ 0
+Text Label 1785 1800 0    50   ~ 0
 phi2
 $Comp
 L Device:C C9
@@ -1166,10 +1149,10 @@ Text Notes 4720 6200 0    50   ~ 0
 Text Label 1760 5965 0    50   ~ 0
 reset
 Wire Wire Line
-	2390 3700 2250 3700
-Connection ~ 2250 3700
+	2390 3400 2250 3400
+Connection ~ 2250 3400
 Wire Wire Line
-	2250 3700 2250 3895
+	2250 3400 2250 3595
 Wire Wire Line
 	2390 1500 2140 1500
 Wire Wire Line
@@ -1467,16 +1450,16 @@ Wire Wire Line
 Wire Wire Line
 	2250 1300 2390 1300
 Wire Wire Line
-	3890 3700 4030 3700
-Connection ~ 4030 3700
+	3890 3400 4030 3400
+Connection ~ 4030 3400
 Wire Wire Line
-	4030 3700 4030 3895
+	4030 3400 4030 3595
 Wire Wire Line
 	4030 1300 3890 1300
 Wire Wire Line
-	4030 1300 4030 3700
+	4030 1300 4030 3400
 Wire Wire Line
-	2250 1300 2250 3700
+	2250 1300 2250 3400
 Wire Wire Line
 	2390 1400 2140 1400
 Connection ~ 2140 1400
@@ -1519,7 +1502,7 @@ Wire Bus Line
 Wire Wire Line
 	2390 1700 1785 1700
 Wire Wire Line
-	2390 2400 1785 2400
+	2390 2500 1785 2500
 Wire Wire Line
 	2390 2600 1785 2600
 Wire Wire Line
@@ -1539,9 +1522,9 @@ Wire Wire Line
 Wire Bus Line
 	1685 2500 1255 2500
 Wire Wire Line
-	2390 3500 1785 3500
+	2390 2100 1785 2100
 Wire Wire Line
-	2390 3600 1785 3600
+	2390 1800 1785 1800
 Wire Wire Line
 	1320 10315 1320 10410
 Wire Wire Line
@@ -2610,6 +2593,18 @@ Wire Notes Line
 	10135 2025 9495 2025
 Wire Notes Line
 	9495 2025 9495 1030
+$Comp
+L C16-Exp-Port-44Pin:C16_EXP_PORT_44PIN CN1
+U 1 1 65200D43
+P 3140 2350
+F 0 "CN1" H 3140 3765 50  0000 C CNN
+F 1 "EDGE_CONNECTOR" H 3140 3674 50  0000 C CNN
+F 2 "ReSeed:C16-Exp-Port-44Pin" H 3140 900 50  0001 C CNN
+F 3 "" H 3140 800 50  0001 C CNN
+	1    3140 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2390 2400
 Wire Bus Line
 	8650 5890 8650 6745
 Wire Bus Line
