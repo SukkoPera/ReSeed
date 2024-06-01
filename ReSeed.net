@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/ReSeed/ReSeed.sch)
-    (date "Sat 12 Aug 2023 19:25:49 CEST")
+    (date "Sat 06 Apr 2024 12:12:21 CEST")
     (tool "Eeschema 5.1.12")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -266,6 +266,7 @@
       (datasheet ~)
       (fields
         (field (name MouserPN) 603-MFR-25FBF52-1K)
+        (field (name Notes) "For 8580 do not mount R3")
         (field (name Value) 1k))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))
@@ -364,7 +365,7 @@
       (datasheet ~)
       (fields
         (field (name MouserPN) 603-MFR-25FBF52-1K)
-        (field (name Notes) "For 6581 do not mount R3")
+        (field (name Notes) "For 8580 do not mount R3")
         (field (name Value) 1k))
       (libsource (lib Device) (part R) (description Resistor))
       (sheetpath (names /) (tstamps /))

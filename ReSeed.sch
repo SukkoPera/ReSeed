@@ -821,6 +821,7 @@ F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 12760 208
 F 3 "~" H 12830 2080 50  0001 C CNN
 F 4 "603-MFR-25FBF52-1K" H 12830 2080 50  0001 C CNN "MouserPN"
 F 5 "1k" H 12830 2080 50  0001 C CNN "Value"
+F 6 "For 8580 do not mount R3" H 12830 2080 50  0001 C CNN "Notes"
 	1    12830 2080
 	-1   0    0    1   
 $EndComp
@@ -1006,7 +1007,7 @@ F 1 "1k" H 10650 1820 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10650 1775 50  0001 C CNN
 F 3 "~" H 10720 1775 50  0001 C CNN
 F 4 "603-MFR-25FBF52-1K" H 10720 1775 50  0001 C CNN "MouserPN"
-F 5 "For 6581 do not mount R3" H 10720 1775 50  0001 C CNN "Notes"
+F 5 "For 8580 do not mount R3" H 10720 1775 50  0001 C CNN "Notes"
 F 6 "1k" H 10720 1775 50  0001 C CNN "Value"
 	1    10720 1775
 	-1   0    0    1   
