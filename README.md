@@ -50,6 +50,15 @@ If you want to get this board produced, you are recommended to get [the latest r
 
 Every release is accompanied by its Bill Of Materials (BOM) file and any relevant notes about it, which you are recommended to read carefully.
 
+## Enclosure
+A 3D-printable enclosure is currently available for this board, it was kindly contributed by [Starquake](https://www.forum64.de/wcf/index.php?user/17096-starquake/) and it is available in the [enclosure](./enclosure) folder.
+
+Usage should be self-explanatory, just note that there are two slightly different versions depending on the SID model, as the one for the 8580 has an extra hole in the upper shell for the Digifix). You will probably have to bend the ferrites and capacitor at the bottom of the board a little to the side.
+
+2x countersunk head screws M3x5mm will be required for assembly.
+
+Please see [this thread on Forum64](https://www.forum64.de/index.php?thread/138918-sammelbestellung-reseed-sid-cartridge-f%C3%BCr-plus-4-und-c16/&postID=2125424#post2125424) for more information and printing recommendations.
+
 ## License
 The ReSeed documentation, including the design itself, is copyright &copy; SukkoPera 2022-2023 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
