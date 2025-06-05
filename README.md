@@ -40,6 +40,8 @@ If you want to assemble a card, **please read the assembly notes on [the Wiki](h
 ### SID Replacements
 Most SID replacements will not work correctly. This is because for technical reasons the clock that is provided to the SID has a lower frequency than what it gets on the C64 (~886 vs ~985 kHz). Most SID replacements do not use this clock signal at all and just assume C64 frequency (I guess), leading to incorrect data transfers. This is the case for the SwinSID firmware, for instance.
 
+[ARMSID](https://www.nobomi.cz/8bit/armsid/index_en.php) was reported to work.
+
 ## Games & Software
 You can get images of the disks Solder used to ship with his SIDcard [here](https://plus4world.powweb.com/software/Synergy_Sidcard_Software). These will help making sure that the card works as intended.
 
@@ -58,6 +60,8 @@ Usage should be self-explanatory, just note that there are two slightly differen
 2x countersunk head screws M3x5mm will be required for assembly.
 
 Please see [this thread on Forum64](https://www.forum64.de/index.php?thread/138918-sammelbestellung-reseed-sid-cartridge-f%C3%BCr-plus-4-und-c16/&postID=2125424#post2125424) for more information and printing recommendations.
+
+[SteveGuidi](https://github.com/SteveGuidi) kindly contributed original-264-style labels for the completed cartridge.
 
 ## License
 The ReSeed documentation, including the design itself, is copyright &copy; SukkoPera 2022-2023 and is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
