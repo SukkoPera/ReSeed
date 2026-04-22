@@ -46,6 +46,7 @@ Most SID replacements will not work correctly. This is because for technical rea
 | [SIDKick](https://github.com/frntc/SIDKick-pico) | In Progress | [SIDKick Pico Github](https://github.com/frntc/SIDKick-pico/discussions/36) | |
 | [SwinSID](https://github.com/dmantione/swinsid) | No | SukkoPera | One report of compatibility, but no evidence provided. |
 | BackSID | No | [BackBit Forums](https://forum.backbit.io/index.php?topic=1089.0) | Discontinued closed-source product; firmware unlikely to be patched. |
+| [KungFuSID](https://github.com/Sgw32/KungFuSID) | No | SukkoPera |  |
 
 ## Games & Software
 You can get images of the disks Solder used to ship with his SIDcard [here](https://plus4world.powweb.com/software/Synergy_Sidcard_Software). These will help making sure that the card works as intended.
