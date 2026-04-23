@@ -38,9 +38,15 @@ The focus for V2 was on reducing the output noise.
 If you want to assemble a card, **please read the assembly notes on [the Wiki](https://github.com/SukkoPera/ReSeed/wiki) carefully or you might destroy your SID chip!**
 
 ### SID Replacements
-Most SID replacements will not work correctly. This is because for technical reasons the clock that is provided to the SID has a lower frequency than what it gets on the C64 (~886 vs ~985 kHz). Most SID replacements do not use this clock signal at all and just assume C64 frequency (I guess), leading to incorrect data transfers. This is the case for the SwinSID firmware, for instance.
+Most SID replacements will not work correctly. This is because for technical reasons the clock that is provided to the SID has a lower frequency than what it gets on the C64 (~886 vs ~985 kHz). Most SID replacements do not use this clock signal at all and just assume C64 frequency (I guess), leading to incorrect data transfers. This is the case for the SwinSID firmware, for instance.  See below for a table of tested SID replacement devices.
 
-[ARMSID](https://www.nobomi.cz/8bit/armsid/index_en.php) was reported to work.
+| SID Device | Compatibility | Source | Notes |
+|:---:|:---:|:---:|:---|
+| [ARMSID](https://www.nobomi.cz/8bit/armsid/index_en.php) | Yes | [Root42](https://www.youtube.com/watch?v=OQfjMYeEfFY) | May have subtle incompatibility (detected during porting of config tool to +4), but unlikely to be seen in practise. |
+| [SIDKick](https://github.com/frntc/SIDKick-pico) | In Progress | [SIDKick Pico Github](https://github.com/frntc/SIDKick-pico/discussions/36) | |
+| [SwinSID](https://github.com/dmantione/swinsid) | No | SukkoPera | One report of compatibility, but no evidence provided. |
+| BackSID | No | [BackBit Forums](https://forum.backbit.io/index.php?topic=1089.0) | Discontinued closed-source product; firmware unlikely to be patched. |
+| [KungFuSID](https://github.com/Sgw32/KungFuSID) | No | SukkoPera |  |
 
 ## Games & Software
 You can get images of the disks Solder used to ship with his SIDcard [here](https://plus4world.powweb.com/software/Synergy_Sidcard_Software). These will help making sure that the card works as intended.
