@@ -1,4 +1,9 @@
 # ReSeed
+
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/SukkoPera/ReSeed)
+![GitHub Release Date](https://img.shields.io/github/release-date/SukkoPera/ReSeed?color=blue&label=last%20release)
+![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/SukkoPera/ReSeed/latest?color=orange)
+
 ReSeed is an expansion card for the Commodore 16 and Plus/4 computers that allows interfacing the computer with a [MOS 6581 or 8580 Sound Interface Device](https://en.wikipedia.org/wiki/MOS_Technology_6581), the chip that is used to deliver audio on the Commodore 64.
 
 It is based on [a design by Solder of Synergy](https://plus4world.powweb.com/hardware/Solders_SID_Card).
