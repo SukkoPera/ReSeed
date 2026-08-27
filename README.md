@@ -52,6 +52,7 @@ Most SID replacements will not work correctly. This is because for technical rea
 | [SwinSID](https://github.com/dmantione/swinsid) | No | SukkoPera | One report of compatibility, but no evidence provided. |
 | BackSID | No | [BackBit Forums](https://forum.backbit.io/index.php?topic=1089.0) | Discontinued closed-source product; firmware unlikely to be patched. |
 | [KungFuSID](https://github.com/Sgw32/KungFuSID) | No | SukkoPera |  |
+| [PD-SID](https://uni64.com/shop/index.php?system=4&m=70&item_id=7536) | No | SteveGuidi | Firmware v191; no sound output and USB port inhibits proper seating in socket (obstructed by socketed CD74HCT4520E). |
 
 ## Games & Software
 You can get images of the disks Solder used to ship with his SIDcard [here](https://plus4world.powweb.com/software/Synergy_Sidcard_Software). These will help making sure that the card works as intended.
